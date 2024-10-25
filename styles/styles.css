@@ -1,3 +1,10 @@
+.header {
+  background-color: #FFD700; /* Yellow color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 ul {
     list-style-type: none;
     margin: 0;
