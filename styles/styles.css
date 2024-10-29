@@ -178,3 +178,14 @@ footer {
   object-fit: contain;
   
 }
+
+.left-side-footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+}
+
+.left-side-footer a:hover {
+  text-decoration:underline;
+}
