@@ -64,7 +64,7 @@ font-size: 1.5em;
 
 }
 
-a:hover {
+.menu a:hover {
   color: white;
 }
 /* nav bar css */
@@ -126,13 +126,6 @@ tbody th:nth-child(odd){
   margin: 0;
 }
 
-footer {
-  height: 15em;
-  background-color: #515151;
-  color: white;
-  display: flex;
-}
-
 
 .aside {
   padding-left: 5em;
@@ -157,6 +150,23 @@ h2{
 
 .søknadsfrist > p {
 font-weight: bold
+}
+
+
+/* dropdown menu */
+details {
+  
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+
+.dropdown-content {
+  padding: 1em;
+  margin-top: 1em
 }
 
 /* footer */
@@ -189,3 +199,4 @@ footer {
 .left-side-footer a:hover {
   text-decoration:underline;
 }
+
