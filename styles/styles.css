@@ -69,3 +69,7 @@ a:hover {
   color: white;
 }
 /* nav bar css */
+.wrapper {
+  display: grid;
+  padding: 20px;
+}
