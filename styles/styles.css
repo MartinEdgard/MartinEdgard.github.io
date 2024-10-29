@@ -19,12 +19,11 @@ h1 {
 
 h2 {
   font-weight: normal;
+  padding-bottom: 1em;
 }
 
 
 /* nav bar css */
-
-
 header {
   height: 10em;
   background-color: #06D6A0;
@@ -70,7 +69,7 @@ a:hover {
 /* nav bar css */
 .item1 { grid-area: header;}
 .item2 { grid-area: left; }
-.aside { grid-area: right; }
+.aside { grid-area: right;}
 
 main {
   height: 100%;
@@ -80,30 +79,24 @@ main {
   align-items: center;
 }
 
-.container {
-  
-}
-
 /* table */
 
 table {
   text-align: left;
-  width: 100%;
-  
-  
+ 
 }
 
 th {
-  padding-top: 2em;
-  border-top: solid black;
-  padding-right: 2em;
+  padding-top: 1.5em;
+  padding-right: 3em;
 }
 
 td {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
-tbody th:nth-child(even){
+tbody th:nth-child(odd){
+  border-top: solid black;
 }
 
 .grid-container {
@@ -115,7 +108,7 @@ tbody th:nth-child(even){
   padding: 10px;
   width: 80%;       /* Set width as desired */
   max-width: 1200px; /* Optionally set a max width */
-  padding: 20px;    /* Add padding if you like */
+  padding: 20px;    /* Add padding if you like */ 
   box-sizing: border-box;
 }
 
@@ -125,8 +118,10 @@ tbody th:nth-child(even){
 }
 
 .image {
-  width: 50rem;
-  
+  width: 100%;    /* Makes the image span the full width of the screen */
+  height: auto;   /* Keeps the image's aspect ratio */
+  display: block; /* Removes any extra space below the image */
+  margin: 0;
 }
 
 footer {
