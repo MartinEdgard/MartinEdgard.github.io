@@ -158,3 +158,23 @@ h2{
 .søknadsfrist > p {
 font-weight: bold
 }
+
+/* footer */
+
+footer {
+  background-color: #06D6A0;
+  display: flex;
+  height: 18em;
+}
+
+.left-side-footer {
+  margin-left: 5em;
+  margin-top: 4em;
+  color: black;
+}
+
+.logo-footer {
+  width: 25em;
+  object-fit: contain;
+  
+}
