@@ -17,9 +17,10 @@ h1 {
   font-size: 4em;
 }
 
-h2 {
+h1 + p {
   font-weight: normal;
   padding-bottom: 1em;
+  font-size: 2em;
 }
 
 
@@ -77,6 +78,7 @@ main {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;
+  padding-top: 1em;
 }
 
 /* table */
@@ -136,8 +138,9 @@ footer {
   padding-left: 5em;
 }
 
-section > p {
+h2{
   font-size: 2em;
+  font-weight: normal;
   padding-bottom: 1em;
 
 }
