@@ -144,3 +144,17 @@ h2{
   padding-bottom: 1em;
 
 }
+
+
+
+.link {
+  color:black
+}
+
+.link:hover {
+  color: gray;
+}
+
+.søknadsfrist > p {
+font-weight: bold
+}
