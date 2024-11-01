@@ -13,7 +13,6 @@ body {
   display: block;
   justify-content: center; /* Centers horizontally */
   align-items: center;
-  padding-top: 1em;
 }
 
 
@@ -31,9 +30,11 @@ h1 + p {
 
 /* nav bar css */
 header {
-  height: 10em;
+  height: 7em;
   background-color: #06D6A0;
   display: flex;
+  position: fixed;
+  width: 100%;
   
   
 }
@@ -82,7 +83,8 @@ main {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;
-  padding-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 8em;
 }
 
 /* table */
@@ -172,18 +174,27 @@ summary {
   margin-bottom: 1.5em;
 }
 
-/* Jobb */
-#jobb {
-  background-color: #333138;
-
-}
-
 .info-content {
   margin: auto;
   width: 50%;
   padding: 1em;
   padding-top: 3em; 
   padding-bottom: 5em;
+  margin-left: 3em;
+}
+/* Jobb */
+#jobb {
+  background-color: #28262C;
+  display: flex;
+
+}
+
+#jobb img {
+  max-width: 50%;
+
+}
+#jobb h2 {
+  font-family: 
 }
 
 #jobb h2, #jobb p {
@@ -194,7 +205,12 @@ summary {
 }
 
 #læring {
-  background-color: #3C787E;
+  background-color: #CECECE;
+  display: flex;
+}
+
+#læring img {
+  max-width: 50%;
 }
 
 #læring  p{
