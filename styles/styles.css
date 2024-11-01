@@ -133,11 +133,11 @@ h2{
 
 
 
-.link {
+a {
   color:black
 }
 
-.link:hover {
+a:hover {
   color: gray;
 }
 
@@ -179,14 +179,13 @@ summary {
   width: 50%;
   padding: 1em;
   padding-top: 3em; 
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   margin-left: 3em;
 }
 /* Jobb */
 #jobb {
   background-color: #28262C;
   display: flex;
-
 }
 
 #jobb img {
@@ -204,8 +203,24 @@ summary {
   padding-bottom: 1rem;
 }
 
+#jobb p:last-child {
+  margin-top: 3em;
+}
+
+#jobb a {
+  font-weight: normal;
+  text-decoration: underline;
+  color: white;
+  font-size: 1em;
+}
+
+#jobb a:hover {
+font-weight: bold;
+}
+
+
 #læring {
-  background-color: #CECECE;
+  background-color: #E7E7E7;
   display: flex;
 }
 
@@ -215,6 +230,51 @@ summary {
 
 #læring  p{
   padding-bottom: 1rem;
+}
+
+#info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5em;
+  
+}
+
+#opptakskrav {
+  margin: 1em;
+  border-right: solid black;
+}
+
+#opptakskrav p {
+  padding-bottom: 1rem;
+}
+
+#undervisning {
+  margin: 1em;
+  border-right: solid black;
+}
+
+#undervisning p {
+  padding-bottom: 1rem;
+}
+
+#undervisning li {
+  padding-left: 1rem;
+}
+
+#kost {
+  margin: 1em;
+}
+
+#kost p {
+  padding-bottom: 1rem;
+}
+
+#kost h3:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+#master {
+  margin: 1em;
 }
 /* footer */
 
