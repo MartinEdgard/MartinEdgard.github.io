@@ -239,6 +239,14 @@ font-weight: bold;
   
 }
 
+#info-grid p {
+  padding-top: 1rem;
+}
+
+#info-grid h4 {
+  padding-top: 1rem;
+}
+
 #opptakskrav {
   margin: 1em;
   border-right: solid black;
@@ -273,9 +281,18 @@ font-weight: bold;
   margin-top: 1rem;
 }
 
-#master {
-  margin: 1em;
+
+#master td:not(:last-of-type) {
+  border-right: solid black;
 }
+
+
+
+#master-link {
+  text-decoration: none;
+}
+
+
 /* footer */
 
 footer {
