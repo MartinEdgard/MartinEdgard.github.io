@@ -126,23 +126,31 @@ main {
 
 h2{
   font-size: 2em;
-  padding-bottom: 1em;
 }
 
-
-
-a {
-  color:black
+#søknadsfrist {
+  padding-top: 2em;
 }
 
-a:hover {
-  color: gray;
+#søknadsfrist p:first-of-type{
+font-weight: bold;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
-.søknadsfrist > p {
-font-weight: bold
+#søknadsfrist p:last-of-type {
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
+#søknadsfrist a {
+  color: black;
+  text-decoration: none;
+}
+
+#søknadsfrist a:hover {
+  text-decoration: underline;
+}
 
 /* dropdown menu */
 details {
@@ -193,6 +201,10 @@ summary {
 #jobb h2, #jobb p {
   color: white
 }
+#jobb h2 {
+  margin-bottom: 2rem;
+}
+
 #jobb p {
   padding-bottom: 1rem;
 }
@@ -203,13 +215,13 @@ summary {
 
 #jobb a {
   font-weight: normal;
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
   font-size: 1em;
 }
 
 #jobb a:hover {
-font-weight: bold;
+text-decoration: underline;
 }
 
 
@@ -220,6 +232,10 @@ font-weight: bold;
 
 #læring img {
   max-width: 50%;
+}
+
+#læring h2 {
+  margin-bottom: 2rem;
 }
 
 #læring  p{
