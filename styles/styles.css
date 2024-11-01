@@ -9,6 +9,11 @@ html{
 }
 
 body {
+  height: 100%;
+  display: block;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  padding-top: 1em;
 }
 
 
@@ -82,23 +87,6 @@ main {
 
 /* table */
 
-table {
-  text-align: left;
- 
-}
-
-th {
-  padding-top: 1.5em;
-  padding-right: 3em;
-}
-
-td {
-  padding-bottom: 2em;
-}
-
-tbody th:nth-child(odd){
-  border-top: solid black;
-}
 
 .grid-container {
   display: grid;
@@ -113,7 +101,18 @@ tbody th:nth-child(odd){
   box-sizing: border-box;
 }
 
-.image {
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.main-box h3 {
+  border-top: solid black;
+  padding-top: 1em;
+}
+ .image {
   width: 100%;    /* Makes the image span the full width of the screen */
   height: auto;   /* Keeps the image's aspect ratio */
   display: block; /* Removes any extra space below the image */
@@ -172,6 +171,20 @@ summary {
 .dropdown-content p {
   margin-bottom: 1.5em;
 }
+
+/* Jobb */
+#jobb {
+  background-color: black;
+
+}
+
+#jobb section {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  background-color: solid white;
+}
+
 
 /* footer */
 
