@@ -201,8 +201,13 @@ summary {
 #jobb h2, #jobb p {
   color: white
 }
-#jobb h2 {
+
+#jobb h2, #læring h2 {
   margin-bottom: 2rem;
+}
+
+#jobb h2 {
+  color:white;
 }
 
 #jobb p {
@@ -234,9 +239,7 @@ text-decoration: underline;
   max-width: 50%;
 }
 
-#læring h2 {
-  margin-bottom: 2rem;
-}
+
 
 #læring  p{
   padding-bottom: 1rem;
@@ -335,7 +338,6 @@ footer a {
 
 footer a:hover {
   text-decoration:underline;
-  color: black;
 }
 
 #mid-footer {
@@ -355,27 +357,13 @@ footer a:hover {
   margin-right: 0.5rem;
 }
 
-#facebook {
+#facebook, #x, #linkedin, #instagram {
   display: flex;
   align-items: center;
 }
 
-#x {
-  display: flex;
+#x, #linkedin, #instagram {
   margin-top: 1rem;
-  align-items: center;
-}
-
-#linkedin{
-  display: flex;
-  margin-top: 1rem;
-  align-items: center;
-}
-
-#instagram {
-  display: flex;
-  margin-top: 1rem;
-  align-items: center;
 }
 
 
