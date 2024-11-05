@@ -1,3 +1,20 @@
+:root {
+  background: white;
+
+}
+
+a {
+color:black;
+text-decoration: underline;
+text-decoration-color: #06D6A0;
+font-weight: normal;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -69,14 +86,13 @@ nav {
 }
 
 .menu a {
-color: black;
-text-decoration: none;
 font-size: 1.5em;
 
 }
 
 .menu a:hover {
   color: white;
+  font-weight: normal;
 }
 /* nav bar css */
 .item1 { grid-area: header;}
@@ -147,14 +163,9 @@ margin-bottom: 1rem;
   font-weight: bold;
 }
 
-#søknadsfrist a {
-  color: black;
-  text-decoration: none;
-}
 
-#søknadsfrist a:hover {
-  text-decoration: underline;
-}
+
+
 
 .info-content {
   margin: auto;
@@ -195,8 +206,6 @@ margin-bottom: 1rem;
 }
 
 #jobb a {
-  font-weight: normal;
-  text-decoration: none;
   color: white;
   font-size: 1em;
 }
@@ -298,7 +307,7 @@ text-decoration: underline;
 
 #studieløp {
   display: grid;
-  margin: 2em;
+  margin: auto;
   justify-content: center; /* Centers horizontally */
   align-items: center;
   margin: auto;
@@ -325,16 +334,26 @@ font-size: 0.8em;
 }
 
 .semester h5{
-  margin-bottom: 0.7em;
-  border-top: solid black;
-  padding-top: 0.7em;
+  border-top: 1px solid black; 
+    padding-top: 8px; 
+    margin-top: 16px; 
+    
+   
 }
 
+#studieløp table{
+  width: 100%;
+}
 
+#studieløp th {
+  justify-content: center;
+  background-color: #06D6A0;
+  text-align: left;
+}
 
-
-
-
+tr {
+  max-width: 30px;
+}
 
 
 
