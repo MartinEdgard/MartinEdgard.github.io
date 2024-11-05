@@ -1,6 +1,6 @@
 :root {
   background: white;
-
+  --main-color: #06D6A0;
 }
 
 * {
@@ -36,10 +36,14 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  font-size: 1.2em;
+}
+
 a {
   color:black;
   text-decoration: underline;
-  text-decoration-color: #06D6A0;
+  text-decoration-color: var(--main-color);
   font-weight: normal;
   }
   
@@ -60,7 +64,7 @@ h1 + p {
 /* nav bar css */
 header {
   height: 7em;
-  background-color: #06D6A0;
+  background-color: var(--main-color);
   display: flex;
   position: fixed;
   width: 100%;
@@ -121,7 +125,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header '
+    'header header'
     'left right';
   gap: 10px;
   padding: 10px;
@@ -138,7 +142,7 @@ main {
   max-width: 600px;
 }
 
-.main-box h3 {
+.main-box h4 {
   border-top: solid black;
   padding-top: 1em;
 }
@@ -320,8 +324,17 @@ text-decoration: underline;
 }
 
 #studieløp h3 {
-  padding-bottom: 1em; 
+  padding-bottom: 0.5em; 
 }
+#studieløp h3:not(:first-of-type) {
+  padding-top: 1em;
+}
+
+#studieløp h4 {
+  padding-bottom: 1em;
+}
+
+
 
 #studieløp p {
 font-weight: normal;
@@ -333,12 +346,14 @@ font-size: 0.8em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 1.5em;
+}
 
-  
+.semester div {
+  width: 80%
 }
 
 .semester h5{
-  border-top: 1px solid black; 
+  border-top: 1px solid var(--main-color); 
     padding-top: 8px; 
     margin-top: 16px; 
     
@@ -350,23 +365,37 @@ font-size: 0.8em;
 }
 
 #studieløp th {
-  background-color: #06D6A0;
   text-align: left;
-  width: 33%
+  width: 33%;
+  border-bottom: solid var(--main-color);
 }
 
 
 
-col {
-  
+#studieløp td {
+  padding: 0.8em;  
 }
+
+
+
+
+#studieløp td:not(:last-of-type){
+  border-right: dashed var(--main-color);
+}
+
+
+
+
+
+
+
 
 
 
 /* footer */
 
 footer {
-  background-color: #06D6A0;
+  background-color: var(--main-color);
   display: flex;
   height: 18em;
   width: 100%;
