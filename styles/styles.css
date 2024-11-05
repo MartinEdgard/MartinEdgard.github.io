@@ -29,7 +29,6 @@ h1 {
 
 h2{
   font-size: 2em;
-  padding-bottom: 1em;
 }
 
 h3 {
@@ -159,19 +158,18 @@ main {
 }
 
 
+
 #søknadsfrist {
   padding-top: 2em;
 }
 
 #søknadsfrist p:first-of-type{
 font-weight: bold;
-margin-top: 1rem;
-margin-bottom: 1rem;
+margin-bottom: 0.4em;
 }
 
 #søknadsfrist p:last-of-type {
-  margin-top: 1rem;
-  font-weight: bold;
+  margin-top: 0.2rem;
 }
 
 
