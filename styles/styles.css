@@ -307,6 +307,11 @@ text-decoration: underline;
 }
 
 
+#background_studieløp{
+  background-color: #E7E7E7;
+  width: 100%;
+  padding-top: 3em;
+}
 
 #master-link {
   text-decoration: none;
@@ -318,7 +323,6 @@ text-decoration: underline;
   justify-content: center; /* Centers horizontally */
   align-items: center;
   width: 80%;
-  background-color:
 }
 
 #studieløp h3 {
@@ -381,6 +385,34 @@ font-size: 0.8em;
 }
 
 
+#spørsmål {
+  padding-top: 5em;
+}
+
+#interessert {
+  margin-bottom: 5em;
+  width: 40%;
+}
+
+#interessert p:first-child{
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+#interessert p:last-child {
+  border-bottom: solid black;
+  padding-bottom: 1.5em;
+  font-size: 1em;
+}
+
+#interessert a{
+  text-decoration: none;
+}
+
+
+
 
 /*image*/
 
@@ -404,10 +436,7 @@ font-size: 0.8em;
   height: auto;     
 }
 
-#spørsmålogVidereUtdanning {
-  
-  justify-content: center;
-}
+
 
 
 #nyhetsbrev {
@@ -433,6 +462,7 @@ font-size: 0.8em;
   background: white;
   color: black;
 }
+
 
 
 /* footer */
