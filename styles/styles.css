@@ -319,7 +319,6 @@ text-decoration: underline;
   align-items: center;
   margin: auto;
   width: 80%;
-
 }
 
 #studieløp h3 {
@@ -383,7 +382,7 @@ font-size: 0.8em;
 
 
 
-/*imgage*/
+/*image*/
 
 .image, #jobb img, #læring img {
   max-width: 100%; 
@@ -396,13 +395,17 @@ font-size: 0.8em;
   height: auto;
   display: block;
   object-fit: cover;
-  max-height: 100;;
+  max-height: 100%;
 }
 
 
 #info-grid img {
   max-width: 100%; 
   height: auto;     
+}
+
+#spørsmålogVidereUtdanning {
+  justify-content: center;
 }
 
 
