@@ -66,8 +66,8 @@ header {
   height: 7em;
   background-color: var(--main-color);
   display: flex;
-  position: fixed;
   width: 100%;
+  position: fixed;
   
   
 }
@@ -173,33 +173,32 @@ margin-bottom: 0.4em;
   margin-top: 0.2rem;
 }
 
+#navigasjonknapp p {
+  display: inline-block;
+  margin: 10px 0;
+}
+
 #navigasjon {
-display: flex;
-align-items: center;
-justify-content: ;
-background-color: var(--main-color);
-padding: 2em;
+  display: flex;
 }
 
-#navigasjon button {
-  background-color: black;
+#navigasjonknapp a {
+  display: block;
+  padding: 10px 20px;
+  background-color: black;  /* Grønn bakgrunn */
   color: white;
-  border: none;
-  padding: 1em 2em;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 5em;
+  text-align: center;
+  text-decoration: none; /* Fjerner understreking */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-#navigasjon button:hover {
-  background-color: #D7DDFF;
-  color: black;
+#navigasjonknapp a:hover {
+  background-color: white; /* Mørkere grønn ved hover */
 }
 
-#navigasjon a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+#navigasjon h2 {
+  
 }
 
 .info-content {
@@ -482,7 +481,8 @@ font-size: 0.8em;
 }
 
 
-#jobb img, #læring img,   {
+#jobb img, 
+#læring img {
   width: 50%; 
   height: auto;
   display: block;
@@ -508,7 +508,7 @@ font-size: 0.8em;
   border-bottom: solid black;
 }
 
-#nyhetsbrevknapp{
+#nyhetsbrevknapp {
     background-color: black;
     color: white;
     border: none;
