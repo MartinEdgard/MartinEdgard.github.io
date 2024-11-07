@@ -1,6 +1,6 @@
 :root {
   background: white;
-  --main-color: #61FF7E;
+  --main-color: #758BFD;
 }
 
 * {
@@ -20,6 +20,7 @@ body {
   justify-content: center; /* Centers horizontally */
   align-items: center;
   margin: auto;
+  
   
 }
 
@@ -114,7 +115,7 @@ main {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;
-  padding-top: 2em;
+  margin-top: 7em;
   padding-bottom: 8em;
 }
 
@@ -172,9 +173,34 @@ margin-bottom: 0.4em;
   margin-top: 0.2rem;
 }
 
+#navigasjon {
+display: flex;
+align-items: center;
+justify-content: ;
+background-color: var(--main-color);
+padding: 2em;
+}
 
+#navigasjon button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5em;
+}
 
+#navigasjon button:hover {
+  background-color: #D7DDFF;
+  color: black;
+}
 
+#navigasjon a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .info-content {
   margin: auto;
@@ -231,9 +257,6 @@ text-decoration: underline;
 #læring {
   background-color: #E7E7E7;
 }
-
-
-
 
 
 #læring  p{
@@ -389,32 +412,69 @@ font-size: 0.8em;
   padding-top: 5em;
 }
 
-#interessert {
-  margin-bottom: 5em;
-  width: 40%;
+#fagligLeder div  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%
 }
 
-#interessert p:first-child{
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding-top: 1.5em;
-  padding-bottom: 0.3em;
+#fagligLeder img {
+  max-width: 150px;
+  height: auto;
 }
 
-#interessert p:last-child {
-  border-bottom: solid black;
+#fagligLeder h3,
+#fagligLeder p {
+    margin: 0; 
+}
+
+
+#interessert div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#interessert h4 {
+  margin-top: 1.2em;
+  
+}
+
+#interessert-top a:nth-child(n+3) {
+  border-top: 2px solid black;
+}
+
+#interessert-bottom a  {
+  border-top: solid black;
+}
+
+
+
+
+
+
+
+#interessert p {
   padding-bottom: 1.5em;
   font-size: 1em;
 }
 
 #interessert a{
   text-decoration: none;
+  display: block;
 }
 
+#studenthistorier {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: darkorange;
+}
 
+#studenthistorier img {
+  width: 100%;
+  height: auto;
+}
 
-
-/*image*/
 
 .image, #jobb img, #læring img {
   max-width: 100%; 
@@ -422,7 +482,7 @@ font-size: 0.8em;
 }
 
 
-#jobb img, #læring img {
+#jobb img, #læring img,   {
   width: 50%; 
   height: auto;
   display: block;
@@ -470,7 +530,7 @@ font-size: 0.8em;
 footer {
   background-color: var(--main-color);
   display: flex;
-  height: 18em;
+  height: 20em;
   width: 100%;
   justify-content: center;
 }
@@ -486,7 +546,7 @@ footer {
 #logo-footer {
   width: 25em;
   object-fit: contain;
-  
+  margin-bottom: 2em;
 }
 
 footer a {
@@ -504,7 +564,6 @@ footer a:hover {
 margin-right: 1em;
   margin-top: 4em;
   color: black;
-  
 }
 
 #right-side-footer {
