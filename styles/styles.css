@@ -1,5 +1,6 @@
 :root {
   --main-color: #758BFD;
+  --beer-color: #EDD83A;
 }
 
 * {
@@ -70,8 +71,6 @@ header {
   display: flex;
   width: 100%;
   position: fixed;
-
-
 }
 
 nav {
@@ -523,6 +522,9 @@ main {
 #studenthistorier {
   background-color: #28262C;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 #studenthistorier h3 {
@@ -540,17 +542,17 @@ main {
   text-decoration: underline;
 }
 
-#studenthistorierBilde  {
-  display: block; /* Make anchor a block-level element */
+#studenthistorierBilde  { /* Make anchor a block-level element */
   width: 50%; /* Set anchor width to 50% */
-  margin: 0 auto; /* Center the anchor inside the container */
+  height: 100%; /* Center the anchor inside the container */
 }
 
 #studenthistorierBilde img {
-  width: 100%; /* Make the image fill the anchor */
-  height: auto; /* Maintain aspect ratio */
+  width: 50%; /* Make the image fill the anchor */
+  height: auto%; /* Maintain aspect ratio */
   display: block; /* Ensure the image behaves like a block-level element */
   object-fit: cover; /* Ensure the image fills the container without distortion */
+  max-height: 100%;
 }
 
 
@@ -671,4 +673,41 @@ footer a:hover {
 #linkedin,
 #instagram {
   margin-top: 1rem;
+}
+
+#nav-video {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+#øl-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#øl-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+#øl-menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+#øl-menu li a:hover {
+  text-decoration: underline;
 }
