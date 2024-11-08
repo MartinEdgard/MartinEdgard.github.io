@@ -16,7 +16,6 @@ html {
 
 body {
   height: 100%;
-  display: block;
   justify-content: center;
   /* Centers horizontally */
   align-items: center;
@@ -549,7 +548,7 @@ main {
 
 #studenthistorierBilde img {
   width: 50%; /* Make the image fill the anchor */
-  height: auto%; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure the image behaves like a block-level element */
   object-fit: cover; /* Ensure the image fills the container without distortion */
   max-height: 100%;
@@ -681,33 +680,57 @@ footer a:hover {
   max-height: 100vh;
   object-fit: cover;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1; /* Ensure the video is behind other content */
 }
 
-#øl-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  display: flex
-  justify-content: center;
-  padding: 1rem 0;
+#øl-header {
+  position: relative;
+  z-index: 1; /* Ensure the header is above the video */
 }
 
-#øl-menu {
+#øl-nav {
+  padding: 1rem;
+}
+
+.øl-menu {
   list-style: none;
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
-#øl-menu li a{
-  text-decoration: none;
+.øl-menu li a {
   color: white;
-  font-size: 1.2em;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-#øl-menu li a:hover {
+.øl-menu li a:hover {
   text-decoration: underline;
+}
+
+#top-text{
+  z-index: 1;
+  padding-top: 10em;
+  color: white;
+  justify content: center;
+
+}
+
+
+#øl-main{
+  padding-top: 100vh;
+}
+
+#beer-left{
+display: grid;
+justify-content: left;
+}
+
+#beer-right{
+display: grid;
+justify-content: right;
 }
