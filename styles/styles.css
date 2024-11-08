@@ -698,16 +698,12 @@ footer a:hover {
 }
 #øl-header {
   position: relative;
-  z-index: 1; /* Ensure the header is above the video */
+  z-index: 1; 
 }
 
 #øl-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
   width: 100%;
-  padding: 10px 20px;
+  padding: 3em;
 }
 
 .øl-menu {
@@ -745,10 +741,27 @@ footer a:hover {
 }
 
 #øl-main{
-  padding-top: 100vh;
+  padding-top: 15em;
   justify-content: center;
   align-items: center;  
   margin: 0;
+}
+
+#øl-main h2 {
+  font-size: 4em;
+}
+
+#øl-main h3 {
+  font-weight: normal;
+}
+
+#øl-main p {
+  margin-top: 1em;
+}
+
+#øl-main img {
+  height: 50%;
+  padding-left: 10em;
 }
 
 #beer-left{
