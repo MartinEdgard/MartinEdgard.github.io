@@ -699,6 +699,8 @@ footer a:hover {
 #øl-header {
   position: relative;
   z-index: 1; 
+  background-color: black;
+  height: 100vh;
 }
 
 #øl-nav {
@@ -741,7 +743,6 @@ footer a:hover {
 }
 
 #øl-main{
-  padding-top: 15em;
   justify-content: center;
   align-items: center;  
   margin: 0;
