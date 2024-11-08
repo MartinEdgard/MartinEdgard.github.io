@@ -716,21 +716,27 @@ footer a:hover {
   z-index: 1;
   padding-top: 10em;
   color: white;
-  justify content: center;
-
+  justify-content: center;
 }
 
 
 #øl-main{
   padding-top: 100vh;
+  justify-content: center;
+  align-items: center;  
+  margin: 0;
 }
 
 #beer-left{
 display: grid;
-justify-content: left;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center;
 }
 
 #beer-right{
-display: grid;
-justify-content: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
