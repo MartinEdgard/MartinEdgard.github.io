@@ -765,20 +765,32 @@ footer a:hover {
 
 #øl-container {
   display: grid;
-  place-items: center;
-  margin: 0 auto;
+  align-items: center;
+  margin: 0;
+  
 }
 
-#beer-left{
+#beer-left {
 display: grid;
-grid-template-columns: 50em 1fr 1fr;
-place-items: center;
+grid-template-columns: 1fr 1fr;
 justify-content: center;
+align-items: center;
+padding-top: 3em;
+margin: 0 auto;
+
 }
+
 
 #beer-right{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #E7E7E7;
+}
+
+#beer-info p {
+  width: 50
 }
