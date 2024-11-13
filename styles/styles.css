@@ -1,6 +1,7 @@
 :root {
   --main-color: #758BFD;
   --beer-color: #EDD83A;
+  --bckgray-color: #E7E7E7;
 }
 
 * {
@@ -289,7 +290,7 @@ main {
 
 
 #læring {
-  background-color: #E7E7E7;
+  background-color: var(--bckgray-color);
 }
 
 
@@ -365,7 +366,7 @@ main {
 
 
 #background_studieløp {
-  background-color: #E7E7E7;
+  background-color: var(--bckgray-color);
   width: 100%;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -674,12 +675,12 @@ footer a:hover {
   margin-top: 1rem;
 }
 
+
+
 #øl-video {
-  width: auto;
+  width: 100%;
   height: auto;
   max-height: 100vh;
-  object-fit: cover;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -735,9 +736,14 @@ footer a:hover {
   font-size: 1.5em;
 }
 
-#top-text img {
+#norgesøl_textlogo {
   max-width: 50%;
   padding-bottom: 2em;
+}
+
+#norgesøl_logomark {
+  padding-top: 2em;
+  max-width: 10%;
 }
 
 #øl-main{
@@ -760,7 +766,6 @@ footer a:hover {
 
 #øl-main img {
   height: 50%;
-  padding-left: 10em;
 }
 
 #øl-container {
@@ -777,9 +782,8 @@ justify-content: center;
 align-items: center;
 padding-top: 3em;
 margin: 0 auto;
-
+margin-left: 4em;
 }
-
 
 #beer-right{
   display: grid;
@@ -788,9 +792,17 @@ margin: 0 auto;
   align-items: center;
   padding-top: 3em;
   padding-bottom: 3em;
-  background-color: #E7E7E7;
+  background-color: var(--bckgray-color);
 }
 
-#beer-info p {
-  width: 50
+.header-container {
+  display: flex;
+  align-items: center;
 }
+
+.header-container img {
+  max-height: 5em;
+  margin: 0; 
+  padding: 0
+}
+
