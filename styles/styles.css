@@ -2,6 +2,7 @@
   --main-color: #758BFD;
   --beer-color: #EDD83A;
   --bckgray-color: #E7E7E7;
+  --footer-color: #28262C;
 }
 
 * {
@@ -21,8 +22,6 @@ body {
   /* Centers horizontally */
   align-items: center;
   margin: auto;
-
-
 }
 
 h1 {
@@ -613,7 +612,8 @@ main {
 /* footer */
 
 footer {
-  background-color: var(--main-color);
+
+  background-color: var(--footer-color);
   display: flex;
   height: 20em;
   width: 100%;
@@ -622,10 +622,13 @@ footer {
 
 
 
+
+
+
 #left-side-footer {
   margin-top: 4em;
   margin-right: 10em;
-  color: black;
+  color: white;
 }
 
 #logo-footer {
@@ -637,7 +640,7 @@ footer {
 footer a {
   font-weight: normal;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1em;
 }
 
@@ -648,7 +651,8 @@ footer a:hover {
 #mid-footer {
   margin-right: 1em;
   margin-top: 4em;
-  color: black;
+  color: white;
+  max-width: 30%;
 }
 
 #right-side-footer {
@@ -699,7 +703,7 @@ footer a:hover {
 }
 #øl-header {
   position: relative;
-  z-index: 1; 
+  z-index: 0; 
   background-color: black;
   height: 100vh;
 }
@@ -707,6 +711,7 @@ footer a:hover {
 #øl-nav {
   width: 100%;
   padding: 3em;
+  z-index: 2;
 }
 
 .øl-menu {
@@ -727,13 +732,13 @@ footer a:hover {
 }
 
 #top-text{
-  padding-top: 10em;
+  padding-top: 20vh;
   color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1;
-  font-size: 1.5em;
+  z-index: 3;
+  font-size: calc(1em + 1vw);
 }
 
 #norgesøl_textlogo {
@@ -805,4 +810,14 @@ margin-left: 4em;
   margin: 0; 
   padding: 0
 }
+
+
+.beer-info a {
+  text-decoration-color: var(--beer-color);
+}
+
+.beer-info a:hover {
+  text-decoration-color: black;
+}
+
 
