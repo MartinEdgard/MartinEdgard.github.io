@@ -19,50 +19,147 @@
             <li><a href="other/norgesøl.html">Norges Øl</a></li>
         </ul>
     </nav>
-    <div id="video-container">
-        <video id="øl-video" src="../media/beer.webm" autoplay loop muted></video>
-        <!--Video hentet fra https://www.pexels.com/nb-no/video/gul-ol-drikkeglass-pils-5538282/. Laget av cottonbro studio.-->
-        <div id="overlay"></div>
-    </div>
-    <div id="top-text">
-        <img id="norgesøl_textlogo" src="/media/norgesøl_textlogo.svg" alt="Norges Øl Logo">
-        <p>En oversikt over den beste ølen fra hvert fylke, ifølge oss i Norges Øl. Bare se etter stjernen uansett hvor du er på nettet, så vet
-            du vi liker den ;)</p>
-            <img id="norgesøl_logomark" src="../media/logomark_stjerne_hvit.svg" alt="Stjerne Hvit">
-    </div>
+        <video id="øl-video" src="../media/norgesøl_video.webm" autoplay loop muted></video>
+        <!--Videoer hentet fra pexels.com. Redigert av gruppens medlemmer.-->
 </header>
 
-<body>
-    <main id="øl-main">
+<body id="øl-body">
+    <section id="om-norgesøl">
+    <h1> Hva er Norges Øl? </h1>
+    <p> Norges Øl er en plattform dedikert til å løfte frem det beste innen norsk ølkultur og håndverk.
+        Vi ønsker å synliggjøre den unike bredden av øl produsert i Norge – fra tradisjonelle bryggerier til innovative mikrobryggerier –
+         og skape en dypere forståelse for hva som gjør norsk øl spesielt. Som en opplysningsplattform tilbyr Norges Øl kunnskap og
+         inspirasjon til alle som vil lære mer om godt norsk øl. Vi gir innsikt i bryggeprosesser, smaker og historien bak de ulike bryggene. 
+         Norges Øl er et samlingssted for ølentusiaster og nybegynnere som vil utforske den rike verdenen av norsk øltradisjon.</p>
+    </section>
+    <section id="øl-navigasjon">
+        <h4>Naviger til ønsket landsdel</h4>
+        <div class="navigasjonknapp">
+            <p><a href="#info-grid">Sørlandet</a></p>
+            <!--Inspirassjon fra forumet i denne linken: https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
+            <p><a href="#studieløp">Vestlandet</a></p>
+            <p><a href="#spørsmål">Nord-Norge</a></p>
+            <p><a href="#spørsmål">Østlandet</a></p>
+            <p><a href="#spørsmål">Trøndelag</a></p>
 
+        </div>
+    </section>
+    <main id="øl-main">
+        <article id="østlandet" class="landsdel-overskrift">
+            <h2> Østlandet </h2>
+        </article>
+        <section id="beer-left">
+            
+            <div class="beer-info">
+                <h4>Akershus</h4>
+                <div class="header-container">
+                    <h3>Wettre Terapils</h3>
+                    <img src="../media/logomark_stjerne.svg" alt="Stjerne">
+                </div>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+                    tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
+                    mauris.
+                    Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
+                    bibendum at.
+                    Nam auctor pulvinar sem nec finibus.</p>
+                <p><a href="https://untappd.com/b/wettre-bryggeri-as-terapils/2564099"> Se mer på Untappd! </a></p>
+            </div>
+            <div class="beer-img">
+                <img src="../media/Wettre.webp" alt="Bilde av Wettre"> <!--Bilde hentet fra https://wolt.com/nb/nor/drammen/venue/gulating-lutsalg-drammen-->
+            </div>
+        </section>
+        <section id="beer-right">
+            <div class="beer-img">
+                <img src="../media/aass.webp" alt="Bilde av Aass"> <!--Bilde hentet fra https://butikk.roma.no/produkt/aass-halling-0-5l-bx/-->
+            </div>
+            <div class="beer-info">
+                <h4>Buskerud</h4>
+                <div class="header-container">
+                    <h3>AASS Halling</h3>
+                    <img src="../media/logomark_stjerne.svg" alt="Stjerne">
+                </div>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+                    tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
+                    mauris.
+                    Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
+                    bibendum at.
+                    Nam auctor pulvinar sem nec finibus.</p>
+                <p><a href="https://untappd.com/b/aass-bryggeri-halling/20943"> Se mer på Untappd! </a></p>
+            </div>
+        </section>
+        <section id="beer-left">
+            <div class="beer-info">
+                <h4>Innlandet</h4>
+                <h3>Trysil 1132 </h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+                    tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
+                    mauris.
+                    Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
+                    bibendum at.
+                    Nam auctor pulvinar sem nec finibus.</p>
+                <p><a href="https://untappd.com/b/trysil-bryggeri-1132/2150156"> Se mer på Untappd! </a></p>
+            </div>
+            <div class="beer-img">
+                <img src="../media/trysil.webp" alt="Bilde av Trysil Bryggeri"> <!--Bilde hentet fra https://shop.trysilbryggeri.no/products/1132-12stk-->
+            </div>
+        </section>
+
+        <article id="vestlandet" class="landsdel-overskrift">
+            <h2> Vestlandet </h2>
+        </article>
+
+        <article id="nord-norge" class="landsdel-overskrift">
+            <h2> Nord-Norge </h2>
+        </article>
+        <section id="beer-left">
+            
+            <div class="beer-info">
+                <h4>Finnmark</h4>
+                <div class="header-container">
+                    <h3>Qvænbrygg #100</h3>
+                    <img src="../media/logomark_stjerne.svg" alt="Stjerne">
+                </div>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+                    tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
+                    mauris.
+                    Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
+                    bibendum at.
+                    Nam auctor pulvinar sem nec finibus.</p>
+                <p><a href="https://untappd.com/b/qvaenbrygg-100/4626228"> Se mer på Untappd! </a></p>
+            </div>
+            <div class="beer-img">
+                <img src="../media/qvnbrygg.webp" alt="Bilde av Qvænbrygg"> <!--Bilde hentet fra https://www.vinmonopolet.no/Land/Norge/Finnmark/Vads%C3%B8/Qv%C3%A6nbrygg-%23100/p/13851702-->
+            </div>
+        </section>
+        <section id="beer-right">
+            <div class="beer-img">
+                <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
+            </div>
+            <div class="beer-info">
+                <h4>Nordland</h4>
+                <h3>Lofotpils Fjell Stout</h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+                    tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
+                    mauris.
+                    Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
+                    bibendum at.
+                    Nam auctor pulvinar sem nec finibus.</p>
+            </div>
+            
+        </section>
+        <article id="trøndelag" class="landsdel-overskrift">
+            <h2> Trøndelag </h2>
+        </article>
+
+        <article id="sørlandet" class="landsdel-overskrift">
+            <h2> Sørlandet </h2>
+        </article>
         <article id="øl-container">
             <section id="beer-left">
                 <div class="beer-info">
-                    <h3>Agder</h3>
+                    <h4>Agder</h4>
                     <div class="header-container">
-                        <h2>Nøgne Ø Pale Ale</h2>
-                        <img src="../media/logomark_stjerne.svg" alt="Stjerne">
-
-                    </div>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-                        tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
-                        mauris.
-                        Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
-                        bibendum at.
-                        Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-                <div class="beer-img">
-                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
-                </div>
-            </section>
-            <section id="beer-right">
-                <div class="beer-img">
-                    <img src="../media/Wettre.webp" alt="Bilde av Wettre"> <!--Bilde hentet fra -->
-                </div>
-                <div class="beer-info">
-                    <h3>Akershus</h3>
-                    <div class="header-container">
-                        <h2>Wettre Terapils</h2>
+                        <h3>Nøgne Ø Pale Ale</h3>
                         <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                     </div>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
@@ -71,16 +168,25 @@
                         Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
                         bibendum at.
                         Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-            </section>
-            <section id="beer-left">
-
-                <div class="beer-info">
-                    <h3>Buskerud</h3>
-                    <div class="header-container">
-                        <h2>AASS Halling</h2>
-                        <img src="../media/logomark_stjerne.svg" alt="Stjerne">
+                    <p><a href="https://untappd.com/b/nogne-o-india-pale-ale-ipa/15929"> Se mer på Untappd! </a></p>
                     </div>
+                <div class="beer-img">
+                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra https://www.vinmonopolet.no/Land/Norge/N%C3%B8gne-%C3%98-India-Pale-Ale/p/1336802-->
+                </div>
+            </section>
+                
+           
+            
+            
+            
+            
+            <section id="beer-right">
+                <div class="beer-img">
+                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
+                </div>
+                <div class="beer-info">
+                    <h4>Møre og Romsdal</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -88,20 +194,15 @@
                         bibendum at.
                         Nam auctor pulvinar sem nec finibus.</p>
                 </div>
-                <div class="beer-img">
-                    <img src="../media/aass.webp" alt="Bilde av Aass"> <!--Bilde hentet fra -->
-                </div>
             </section>
+           
             <section id="beer-right">
                 <div class="beer-img">
                     <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
                 </div>
                 <div class="beer-info">
-                    <h3>Finnmark</h3>
-                    <div class="header-container">
-                        <h2>Qvænbrygg #100</h2>
-                        <img src="../media/logomark_stjerne.svg" alt="Stjerne">
-                    </div>
+                    <h4>Oslo</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -113,8 +214,8 @@
             <section id="beer-left">
 
                 <div class="beer-info">
-                    <h3>Innlandet</h3>
-                    <h2></h2>
+                    <h4>Rogaland</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -131,38 +232,8 @@
                     <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
                 </div>
                 <div class="beer-info">
-                    <h3>Møre og Romsdal</h3>
-                    <h2></h2>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-                        tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
-                        mauris.
-                        Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
-                        bibendum at.
-                        Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-            </section>
-            <section id="beer-left">
-                <div class="beer-info">
-                    <h3>Nordland</h3>
-                    <h2>Lofotpils Fjell Stout</h2>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-                        tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
-                        mauris.
-                        Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
-                        bibendum at.
-                        Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-                <div class="beer-img">
-                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
-                </div>
-            </section>
-            <section id="beer-right">
-                <div class="beer-img">
-                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
-                </div>
-                <div class="beer-info">
-                    <h3>Oslo</h3>
-                    <h2></h2>
+                    <h4>Telemark</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -174,8 +245,8 @@
             <section id="beer-left">
 
                 <div class="beer-info">
-                    <h3>Rogaland</h3>
-                    <h2></h2>
+                    <h4>Troms</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -192,8 +263,8 @@
                     <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
                 </div>
                 <div class="beer-info">
-                    <h3>Telemark</h3>
-                    <h2></h2>
+                    <h4>Trøndelag</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -205,8 +276,8 @@
             <section id="beer-left">
 
                 <div class="beer-info">
-                    <h3>Troms</h3>
-                    <h2></h2>
+                    <h4>Vestfold</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -223,8 +294,8 @@
                     <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
                 </div>
                 <div class="beer-info">
-                    <h3>Trøndelag</h3>
-                    <h2></h2>
+                    <h4>Vestland</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -236,39 +307,8 @@
             <section id="beer-left">
 
                 <div class="beer-info">
-                    <h3>Vestfold</h3>
-                    <h2></h2>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-                        tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
-                        mauris.
-                        Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
-                        bibendum at.
-                        Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-                <div class="beer-img">
-                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
-                </div>
-            </section>
-            <section id="beer-right">
-                <div class="beer-img">
-                    <img src="../media/nøgneø.webp" alt="Bilde av Nøgne Ø"> <!--Bilde hentet fra -->
-                </div>
-                <div class="beer-info">
-                    <h3>vestland</h3>
-                    <h2></h2>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-                        tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
-                        mauris.
-                        Praesent quis nulla eget erat vehicula sodales. Sed fermentum ante dui, viverra egestas eros
-                        bibendum at.
-                        Nam auctor pulvinar sem nec finibus.</p>
-                </div>
-            </section>
-            <section id="beer-left">
-
-                <div class="beer-info">
-                    <h3>Østfold</h3>
-                    <h2></h2>
+                    <h4>Østfold</h4>
+                    <h3></h3>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                         tempor congue aliquet. Donec maximus erat ex, id lobortis nisl semper ut. Mauris id sagittis
                         mauris.
@@ -287,37 +327,30 @@
 
 <footer>
     <section id="left-side-footer">
-        <img id="logo-footer" src="../media/OSLOMET_HELLOGO.svg" alt="Oslo Metropolitan University">
-        <p>Postboks 4, St. Olavs plass</p>
-        <p>0130 Oslo</p>
-        <p>Tlf.: 67 23 50 00 </p>
-        <p><a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a></p>
+        <img id="logo-footer" src="../media/norgesøl_textlogo.svg" alt="Norges Øl logo">
+        <p>ELLEN GLEDITSCHS HUS, Pilestredet 35</p>
+        <p>0166 Oslo</p>
+        <p>Tlf.: 12345678 </p>
+        <p><a href= "https://www.oslomet.no/om/kontakt">Kontakt oss</a></p>
     </section>
-    <section id="mid-footer">
-        <h3>Fakulteter</h3>
-        <p><a href="https://www.oslomet.no/om/afi">Arbeidsforskningsinstituttet (AFI)</a></p>
-        <p><a href="https://www.oslomet.no/om/hv">Helsevitenskap (HV)</a></p>
-        <p><a href="https://www.oslomet.no/om/sam">Samfunnsvitenskap (SAM)</a></p>
-        <p><a href="https://www.oslomet.no/om/tkd">Teknologi, kunst og design (TKD)</a></p>
-        <p><a href="https://www.oslomet.no/om/lui">Lærerutdanning og internasjonale studier (LUI)</a></p>
-        <p><a href="https://www.oslomet.no/om/kai">Arbeidsinkludering (KAI)</a></p>
-        <p><a href="https://www.oslomet.no/om/sps">Profesjonsstudier (SPS)</a></p>
-    </section>
+    
+    
+
     <section id="right-side-footer">
         <a href="https://www.facebook.com/oslomet/" id="facebook">
-            <img src="../media/facebook_logo.svg" alt="Facebook Logo">
+            <img src="../media/facebook_hvit.svg" alt="Facebook Logo">
             <p>Facebook</p>
         </a>
         <a href="https://x.com/oslomet" id="x">
-            <img src="../media/x_logo.svg" alt="X/Twitter Logo">
+            <img src="../media/x_hvit.svg" alt="X/Twitter Logo">
             <p>X/Twitter</p>
         </a>
         <a href="https://www.linkedin.com/school/oslomet" id="linkedin">
-            <img src="../media/linkedin_logo.svg" alt="LinkedIn Logo">
+            <img src="../media/linkedin_hvit.svg" alt="LinkedIn Logo">
             <p>LinkedIn</p>
         </a>
         <a href="https://www.instagram.com/oslomet/" id="instagram">
-            <img src="../media/instagram_logo.svg" alt="Instagram Logo">
+            <img src="../media/instagram_hvit.svg" alt="Instagram Logo">
             <p>Instagram</p>
         </a>
     </section>

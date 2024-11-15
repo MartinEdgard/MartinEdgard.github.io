@@ -1,7 +1,8 @@
 :root {
   --main-color: #758BFD;
-  --beer-color: #EDD83A;
+  --beer-color: #BA0C2F;
   --bckgray-color: #E7E7E7;
+  --footer-color: #28262C;
 }
 
 * {
@@ -21,25 +22,42 @@ body {
   /* Centers horizontally */
   align-items: center;
   margin: auto;
-
-
 }
 
-h1 {
+#oslomet-body h1 {
   font-size: 4em;
 }
 
-h2 {
+#oslomet-body h2 {
   font-size: 2em;
 }
 
-h3 {
+#oslomet-body h3 {
   font-size: 1.5em;
 }
 
-h4 {
+#oslomet-body h4 {
   font-size: 1.2em;
 }
+
+#øl-body h1 {
+  font-size: 7em;
+  text-align: center;
+}
+
+#øl-body h2 {
+  font-size: 5em;
+}
+
+#øl-body h3{
+  font-size: 4em;
+}
+
+#øl-body h4 {
+  font-size: 1.5em;
+}
+
+
 
 a {
   color: black;
@@ -56,8 +74,7 @@ a:hover {
 }
 
 
-
-h1+p {
+#oslomet-body h1+p {
   font-weight: normal;
   padding-bottom: 1em;
   font-size: 2em;
@@ -122,7 +139,7 @@ h1+p {
   grid-area: right;
 }
 
-main {
+#oslomet-body main {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -193,31 +210,46 @@ main {
   margin-top: 0.2rem;
 }
 
-#navigasjon {
+/* scroll til på begge sider */
+
+#navigasjon, #øl-navigasjon {
   display: flex;
   flex-direction: column;
   padding: 2em;
-  background-color: var(--main-color);
+ 
 }
 
-#navigasjonknapp {
+#navigasjon {
+  background-color: var(--main-color);
+  
+}
+
+#øl-navigasjon {
+  background-color: var(--beer-color);
+}
+
+#øl-navigasjon .navigasjonsknapp {
+  border-radius: 10px;
+}
+.navigasjonknapp {
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
-#navigasjonknapp p {
+.navigasjonknapp p {
   display: inline-block;
+  
 }
 
 
 
-#navigasjon h2 {
+#navigasjon h2, #øl-navigasjon h4 {
   text-align: center;
 }
 
-#navigasjonknapp a {
+.navigasjonknapp a {
   display: block;
   padding: 1em 2em;
   background-color: black;
@@ -229,14 +261,16 @@ main {
 
 }
 
-#navigasjonknapp a:hover {
+.navigasjonknapp a:hover {
   background-color: white;
   color: black;
 }
 
-#navigasjon h2 {
+#navigasjon h2, #øl-navigasjon h4 {
   margin-bottom: 1em;
 }
+
+/* scroll til på begge sider */
 
 .info-content {
   margin: auto;
@@ -613,7 +647,8 @@ main {
 /* footer */
 
 footer {
-  background-color: var(--main-color);
+
+  background-color: var(--footer-color);
   display: flex;
   height: 20em;
   width: 100%;
@@ -622,10 +657,13 @@ footer {
 
 
 
+
+
+
 #left-side-footer {
   margin-top: 4em;
   margin-right: 10em;
-  color: black;
+  color: white;
 }
 
 #logo-footer {
@@ -637,7 +675,7 @@ footer {
 footer a {
   font-weight: normal;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1em;
 }
 
@@ -648,7 +686,8 @@ footer a:hover {
 #mid-footer {
   margin-right: 1em;
   margin-top: 4em;
-  color: black;
+  color: white;
+  max-width: 30%;
 }
 
 #right-side-footer {
@@ -675,38 +714,29 @@ footer a:hover {
   margin-top: 1rem;
 }
 
+#øl-header {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 #øl-video {
   width: 100%;
   height: auto;
-  max-height: 100vh;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: -1; /* Ensure the video is behind other content */
-}
-
-#overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: black; /* Or any color you like */
-  opacity: 0.5; /* Set to 50% */
-  z-index: -1;
-}
-#øl-header {
-  position: relative;
-  z-index: 1; 
-  background-color: black;
-  height: 100vh;
+  
 }
 
 #øl-nav {
+  position: absolute;
   width: 100%;
   padding: 3em;
+  z-index: 2;
 }
 
 .øl-menu {
@@ -726,15 +756,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-#top-text{
-  padding-top: 10em;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 1;
-  font-size: 1.5em;
-}
+
 
 #norgesøl_textlogo {
   max-width: 50%;
@@ -747,16 +769,23 @@ footer a:hover {
 }
 
 #øl-main{
-  justify-content: center;
-  align-items: center;  
+   
   margin: 0;
 }
 
-#øl-main h2 {
-  font-size: 4em;
+#om-norgesøl {
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto;
 }
 
-#øl-main h3 {
+#om-norgesøl p {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
+
+#øl-main h4 {
   font-weight: normal;
 }
 
@@ -768,8 +797,14 @@ footer a:hover {
   height: 50%;
 }
 
+.landsdel-overskrift {
+  padding: 2em;
+  text-align: center;
+  color: white;
+  background-color: #17183B;
+}
+
 #øl-container {
-  display: grid;
   align-items: center;
   margin: 0;
   
@@ -781,8 +816,8 @@ grid-template-columns: 1fr 1fr;
 justify-content: center;
 align-items: center;
 padding-top: 3em;
-margin: 0 auto;
-margin-left: 4em;
+border-bottom: solid #17183B;
+border-width: 0.3em;
 }
 
 #beer-right{
@@ -792,7 +827,8 @@ margin-left: 4em;
   align-items: center;
   padding-top: 3em;
   padding-bottom: 3em;
-  background-color: var(--bckgray-color);
+  border-bottom: solid #17183B;
+  border-width: 0.3em;
 }
 
 .header-container {
@@ -806,3 +842,15 @@ margin-left: 4em;
   padding: 0
 }
 
+
+.beer-info a {
+  text-decoration-color: var(--beer-color);
+}
+
+.beer-info a:hover {
+  text-decoration-color: black;
+}
+
+#beer-left .beer-info {
+margin-left: 10%;
+}
