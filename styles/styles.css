@@ -3,6 +3,7 @@
   --beer-color: #BA0C2F;
   --bckgray-color: #E7E7E7;
   --footer-color: #28262C;
+  --beersecondary-color: #17183B;
 }
 
 * {
@@ -228,6 +229,7 @@ a:hover {
 
 #øl-navigasjon {
   background-color: var(--beer-color);
+  color: white;
 }
 
 #øl-navigasjon .navigasjonsknapp {
@@ -765,7 +767,6 @@ footer a:hover {
 }
 
 #øl-main {
-
   margin: 0;
 }
 
@@ -789,15 +790,12 @@ footer a:hover {
   margin-top: 1em;
 }
 
-#øl-main img {
-  height: 50%;
-}
 
 .landsdel-overskrift {
   padding: 2em;
   text-align: center;
   color: white;
-  background-color: #17183B;
+  background-color: var(--beersecondary-color);
 }
 
 #øl-container {
@@ -806,35 +804,50 @@ footer a:hover {
 
 }
 
-#beer-left {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding-top: 3em;
-  border-bottom: solid #17183B;
-  border-width: 0.3em;
-  padding-bottom: 3em;
+#øl-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 100%;
 }
 
-#beer-right {
+#beer-left, #beer-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-top: 3em;
   padding-bottom: 3em;
-  border-bottom: solid #17183B;
+  border-bottom: solid var(--beersecondary-color);
   border-width: 0.3em;
+  place-items: center;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  
 }
 
 .header-container img {
   max-height: 5em;
   margin: 0;
-  padding: 0
+}
+
+#bryggeri {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#bryggeri h3 {
+  font-weight: normal;
+}
+
+#bryggeri img {
+  width:6em;
+}
+
+#ølnavn {
+  display: flex;
 }
 
 
@@ -854,9 +867,6 @@ footer a:hover {
   margin-right: 10%;
 }
 
-#rating {
-  scale: 0.2;
-}
 
 #øl-scroll, #scroll {
   position: fixed;
