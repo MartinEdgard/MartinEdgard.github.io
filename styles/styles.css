@@ -1,5 +1,5 @@
 :root {
-  --main-color: #F9564F;
+  --main-color: #FF3864;
   --bckgray-color: #E7E7E7;
   --footer-color: #28262C;
   --beer-color: #BA0C2F;
@@ -158,7 +158,6 @@ a:hover {
   justify-content: center;
   /* Centers horizontally */
   align-items: center;
-  margin-top: 7rem;
   padding-bottom: 8rem;
 }
 
@@ -541,7 +540,6 @@ a:hover {
 #interessert div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
 #interessert h4 {
@@ -550,7 +548,7 @@ a:hover {
 }
 
 #interessert-top a:nth-child(n+3) {
-  border-top: 2px solid black;
+  border-top: solid black;
 }
 
 #interessert-bottom a {
@@ -897,22 +895,24 @@ footer a:hover {
 
 @media (max-width: 800px) {
   html {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
+
+  #oslomet-body h1 {
+    font-size: 3rem;
+  }
+
+
 
   #index-header {
     height: auto; 
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 10;
-
   }
 
   .hamburger {
     display: block; /* Show hamburger button */
-    
   }
 
   .menu {
@@ -923,7 +923,7 @@ footer a:hover {
     right: 0;
     background-color: var(--main-color);
     width: 100%;
-    padding: 10px 0;
+    padding: 1em 0;
     text-align: center;
   }
 
@@ -945,11 +945,10 @@ footer a:hover {
   }
 
   .logo img {
-    height: 5rem;
-    z-index: 1;
+    height: 3rem;
   }
 
-  
+ 
   
   .grid-container {
     grid-template-areas:
@@ -957,7 +956,9 @@ footer a:hover {
       'left'
       'right';
   }
-
+  .main-box {
+    font-size: 2rem;
+  }
   .aside {
     padding-left: 0;
     padding-top: 3em;
@@ -990,33 +991,55 @@ footer a:hover {
     border-right: none;
     border-bottom: solid black;
   }
+  #lederinfo {
+    padding-left: 1.5em;
+  }
 
+  #interessert div {
+    grid-template-columns: 1fr;
+  }
 
+  #nyhetsbrev {
+    flex-direction: column;;
+  }
 
+  #nyhetsbrevknapp {
+   padding;
+  }
 
+  footer {
+    flex-direction: column;
+    height: auto;
+    place-items: left;
+    padding-left: 2rem;
+  }
 
+  
+
+  #left-side-footer, #mid-footer, #right-side-footer {
+    margin-right: 0;
+    margin-left: 0;
+  }
+#right-side-footer {
+}
+ 
 
   #scroll, #øl-scroll {
     display: none;
   }
- 
-  
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px, min-width: 800px) {
   html {
     font-size: 9pt;
   }
 
   #index-header {
     height: auto; 
-    position: sticky;
+    position: fixed;
   }
 
- 
-
   .menu {
-     
     padding: 0;
     padding-top: 1rem;
   }
