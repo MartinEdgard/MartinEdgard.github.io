@@ -904,7 +904,9 @@ footer a:hover {
     font-size: 3rem;
   }
 
-
+  #oslomet-body p{
+    font-size: 1.2rem;
+  }
 
   #index-header {
     height: auto; 
@@ -965,6 +967,22 @@ footer a:hover {
     padding-left: 0;
     padding-top: 3em;
   }
+
+#navigasjon {
+  place-items: center;
+}
+
+.navigasjonknapp {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  width: 50%;
+}
+
+.navigasjonknapp a {
+  margin-top: 1rem;
+}
+
 
   .info-content {
     width: 80%;
