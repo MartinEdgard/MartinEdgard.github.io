@@ -85,12 +85,14 @@ a:hover {
 
 
 /* nav bar css */
+/* General Header Styles */
 #index-header {
   height: 7rem;
   background-color: var(--main-color);
   display: flex;
   width: 100%;
   position: fixed;
+  z-index: 10; /* Ensure it stays on top */
 }
 
 #index-nav {
@@ -106,27 +108,36 @@ a:hover {
   height: 4rem;
 }
 
+/* Default Menu Styles (Desktop) */
 .menu {
   display: flex;
   list-style: none;
-  padding-right: 7.5rem
 }
 
 .menu li {
   margin-left: 3rem;
-
 }
 
 .menu a {
   font-size: 1.5rem;
-
-
+  text-decoration: none;
+  color: black;
 }
 
 .menu a:hover {
   color: white;
   font-weight: normal;
+}
 
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none; /* Hide checkbox by default */
+}
+
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .item1 {
@@ -239,7 +250,6 @@ a:hover {
 .navigasjonknapp {
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
 }
 
@@ -358,7 +368,7 @@ a:hover {
 }
 
 
-#opptakskrav {
+#opptakskrav, #undervisning {
   margin: 1rem;
   border-right: solid black;
 }
@@ -373,11 +383,7 @@ a:hover {
 
 }
 
-#undervisning {
-  margin: 1rem;
-  border-right: solid black;
 
-}
 
 #undervisning p {
   padding-bottom: 1rem;
@@ -887,33 +893,51 @@ footer a:hover {
 } 
 
 
+/*Mobil*/
+
 @media (max-width: 800px) {
   html {
-    font-size: 6pt;
+    font-size: 0.8rem;
   }
 
   #index-header {
     height: auto; 
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
   }
 
-  #index-nav {
-    width: 3rem;
-    margin-left: 10rem;
+  .hamburger {
+    display: block; /* Show hamburger button */
+    
   }
 
   .menu {
-    flex-direction: column; 
-    padding: 0;
-    padding-top: 1rem;
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below header */
+    right: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
   }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
   .menu li {
     margin: 0.5rem 0;
   }
 
   .menu a {
     font-size: 2rem; 
-    border-bottom: solid black;
   }
 
   .menu a:hover{
@@ -921,20 +945,62 @@ footer a:hover {
   }
 
   .logo img {
-    height: 7rem;
+    height: 5rem;
+    z-index: 1;
   }
 
-  .item1{
-    
+  
+  
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'left'
+      'right';
   }
 
-  .item2{
-
+  .aside {
+    padding-left: 0;
+    padding-top: 3em;
   }
 
-  .aside{
-
+  .info-content {
+    width: 80%;
   }
+
+  #jobb,
+  #studenthistorier {
+  flex-direction: column;
+  align-items: center;
+}
+
+#læring {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#jobb img, #læring img, #studenthistorier img {
+  width: 100%;
+  }
+
+  #info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #undervisning, #opptakskrav {
+    border-right: none;
+    border-bottom: solid black;
+  }
+
+
+
+
+
+
+  #scroll, #øl-scroll {
+    display: none;
+  }
+ 
+  
 }
 
 @media (max-width: 1200px) {
@@ -947,10 +1013,7 @@ footer a:hover {
     position: sticky;
   }
 
-  #index-nav {
-    width: 3rem;
-    margin-left: 10rem;
-  }
+ 
 
   .menu {
      
