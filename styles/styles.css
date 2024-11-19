@@ -932,7 +932,9 @@ footer a:hover {
 
   }
 
-  
+  .aside{
+
+  }
 }
 
 @media (max-width: 1200px) {
@@ -972,5 +974,9 @@ footer a:hover {
 
   .logo img {
     height: 7rem;
+  }
+
+  #scroll, #øl-scroll {
+    display: none;
   }
 }
