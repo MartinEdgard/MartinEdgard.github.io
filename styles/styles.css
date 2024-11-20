@@ -187,9 +187,10 @@ a:hover {
   max-width: 600px;
 }
 
-.main-box h4 {
+.main-box section p:first-of-type {
   border-top: solid black;
   padding-top: 1rem;
+  font-weight: bold;
 }
 
 .image {
@@ -213,6 +214,11 @@ a:hover {
 
 #søknadsfrist {
   padding-top: 2rem;
+}
+
+#søknadsfrist ul {
+  padding-left: 1rem;
+  font-size: 1.5rem;
 }
 
 #søknadsfrist p:first-of-type {
@@ -292,7 +298,7 @@ a:hover {
 
 .info-content {
   margin: auto;
-  width: 50%;
+  width: 100%;
   padding: 1rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -302,10 +308,7 @@ a:hover {
 /* Jobb */
 #jobb {
   background-color: #28262C;
-}
-
-#jobb {
-  color: white
+  color: white;
 }
 
 #jobb h2,
@@ -340,17 +343,12 @@ a:hover {
 #læring,
 #studenthistorier {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 100%;
 }
 
 
 #læring {
   background-color: var(--bckgray-color);
 }
-
-
 
 
 #info-grid {
@@ -383,8 +381,6 @@ a:hover {
   padding-left: 1rem;
 
 }
-
-
 
 #undervisning p {
   padding-bottom: 1rem;
@@ -477,8 +473,8 @@ a:hover {
 
 .semester h5 {
   border-top: 1px solid var(--main-color);
-  padding-top: 8px;
-  margin-top: 16px;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
 
 
 }
@@ -597,18 +593,16 @@ a:hover {
 }
 
 
-
-
 .image,
-#jobb img,
-#læring img, #studenthistorier img {
+#jobb img, #læring img,
+ #studenthistorier img {
   max-width: 100%;
   height: auto;
 }
 
 
-#jobb img,
-#læring img, #studenthistorier img {
+#jobb img, #læring img,
+ #studenthistorier img {
   width: 50%;
   height: auto;
   display: block;
@@ -621,8 +615,6 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
-
-
 
 
 #nyhetsbrev {
@@ -766,7 +758,6 @@ footer a:hover {
 }
 
 
-
 #norgesøl_textlogo {
   max-width: 50%;
   padding-bottom: 2rem;
@@ -889,12 +880,13 @@ footer a:hover {
   right: 10px;
   padding: 1rem;
   border-radius: 4rem;
-  color: white;
+  
   text-decoration: none;
 }
 
 #øl-scroll {
   background-color: var(--beer-color);
+  color: white;
 }
 
 #scroll {
@@ -904,7 +896,7 @@ footer a:hover {
 
 /*Mobil*/
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   html {
     font-size: 0.5rem;
   }
@@ -921,8 +913,8 @@ footer a:hover {
     font-size: 2rem;
   }
 
-  #oslomet-body p, #oslomet-body a,#oslomet-body li,#oslomet-body th {
-    font-size: 2rem;
+  #oslomet-body p, #oslomet-body a, #oslomet-body li, #oslomet-body th {
+    font-size: 1.5rem;
   }
 
   #index-header {
@@ -977,9 +969,11 @@ footer a:hover {
       'left'
       'right';
   }
+  
   .main-box {
     font-size: 2rem;
   }
+  
   .aside {
     padding-left: 0;
     padding-top: 3em;
@@ -1005,6 +999,10 @@ footer a:hover {
     width: 80%;
   }
 
+.semester {
+  grid-template-columns: 1fr 1fr;
+}
+
   #jobb,
   #studenthistorier {
   flex-direction: column;
@@ -1028,6 +1026,7 @@ footer a:hover {
     border-right: none;
     border-bottom: solid black;
   }
+
   #lederinfo {
     padding-left: 1.5em;
   }
@@ -1070,11 +1069,10 @@ footer a:hover {
 }
 
 .beer-img {
-  /* Hentet fra inspect element */
+  /* Hentet fra inspect element i chrome */
   overflow-clip-margin: content-box;
   overflow: clip;
-  /* Hentet fra inspect element */
-  
+  /* Hentet fra inspect element i chrome */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1106,6 +1104,7 @@ font-size: 2rem;
   }
   footer p {
     font-size: 2rem;
+    padding-bottom: 2rem;
   }
 
   footer a {
@@ -1137,40 +1136,11 @@ font-size: 2rem;
   }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
   html {
     font-size: 0.75rem;
   }
 
-  #index-header {
-    height: auto; 
-    position: fixed;
-  }
-
-  .menu {
-    padding: 0;
-    padding-top: 1rem;
-  }
-  .menu li {
-    margin: 0.5rem 0;
-    margin-left: 1.5rem;
-  }
-
-  .menu a {
-    font-size: 1.7rem; 
-    border-bottom: solid black;
-    white-space: nowrap;
-  }
-
-  .menu a:hover{
-    text-decoration: none;
-  }
-
-  .logo img {
-    height: 7rem;
-  }
-
-  
   #scroll, #øl-scroll {
     display: none;
   }
