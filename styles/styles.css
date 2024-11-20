@@ -399,8 +399,14 @@ a:hover {
   margin: 1rem;
 }
 
-#kost p {
+#kost  p {
   padding-bottom: 1rem;
+}
+
+#kost a p {
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 0.8rem;
 }
 
 
