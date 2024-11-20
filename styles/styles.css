@@ -832,6 +832,7 @@ footer a:hover {
   border-bottom: solid var(--beersecondary-color);
   border-width: 0.3rem;
   place-items: center;
+
 }
 
 .header-container img {
@@ -857,6 +858,13 @@ footer a:hover {
   display: flex;
 }
 
+.beer-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 100%;
+}
 
 .beer-info a {
   text-decoration-color: var(--beer-color);
@@ -866,8 +874,8 @@ footer a:hover {
   text-decoration-color: black;
 }
 
-#beer-left .beer-info {
-  
+.beer-info {
+  margin-left: 1rem;
 }
 
 #beer-right .beer-info {
@@ -896,7 +904,7 @@ footer a:hover {
 
 /*Mobil*/
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   html {
     font-size: 0.5rem;
   }
@@ -1062,9 +1070,15 @@ footer a:hover {
 }
 
 .beer-img {
-  width: 100%;
+  /* Hentet fra inspect element */
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  /* Hentet fra inspect element */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
 #øl-body p, #øl-body a {
@@ -1099,7 +1113,7 @@ font-size: 2rem;
   }
 
   #logo-footer {
-    width: 50rem;
+    width: 90%;
     padding-bottom: 2rem;
   }
 
@@ -1123,9 +1137,9 @@ font-size: 2rem;
   }
 }
 
-@media (max-width: 1200px, min-width: 800px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   html {
-    font-size: 9pt;
+    font-size: 0.75rem;
   }
 
   #index-header {
@@ -1156,6 +1170,7 @@ font-size: 2rem;
     height: 7rem;
   }
 
+  
   #scroll, #øl-scroll {
     display: none;
   }
