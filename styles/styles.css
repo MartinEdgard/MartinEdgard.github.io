@@ -1,83 +1,95 @@
+/* Table of contents 
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
 :root {
-  --main-color: #05A8AA;
-  --bckgray-color: #E7E7E7;
-  --footer-color: #28262C;
-  --beer-color: #BA0C2F;
-  --beersecondary-color: #17183B;
+  --main-color: #05A8AA; /* Hovedfarge som kan brukes på flere elementer */
+  --bckgray-color: #E7E7E7; /* Grå bakgrunnsfarge */
+  --footer-color: #28262C; /* Farge for bunntekst */
+  --beer-color: #BA0C2F; /* Primærfarge for "norges-øl"*/
+  --beersecondary-color: #17183B; /* Sekundærfarge for "norges øl"*/
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Fjerner standard marger for alle elementer */
+  padding: 0; /* Fjerner standard innrykk */
+  box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde/høyde */
 }
 
-
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif; /* Setter standard skrifttype til Arial om dette er tilgjengelig*/
+  scroll-behavior: smooth; /* Gjør scrolling på siden jevn når vi bruker navigasjonsknapper */
+  font-size: 12pt; /* Standard skriftstørrelse */
 }
 
 body {
-  height: 100%;
-  justify-content: center;
-  /* Centers horizontally */
-  align-items: center;
-  margin: auto;
+  height: 100%; /* Setter kroppens høyde til å dekke hele vinduet */
+  margin: auto; /* Midtstiller kroppen i forhold til vinduet */
 }
 
+
 #oslomet-body h1 {
-  font-size: 4rem;
+  font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h2 {
-  font-size: 2rem;
+  font-size: 2rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h4 {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #øl-body h1 {
-  font-size: 7rem;
-  text-align: center;
+  font-size: 7rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
+  text-align: center; /* Sentrerer t */
 }
 
 #øl-body h2 {
-  font-size: 5rem;
+  font-size: 5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
 #øl-body h3 {
-  font-size: 4rem;
+  font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
 #øl-body h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
 
 
 a {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: var(--main-color);
-  font-weight: normal;
+  color: black; /* Setter tekstfargen på alle linker til svart */
+  text-decoration: underline; /* Legger til en strek under alle linker slik at disse er mer synlige */
+  text-decoration-color: var(--main-color); /* Setter fargen på linjene til hovedfargen vår */
+  font-weight: normal; /* Setter teksttykkelsen til normal kontra fet */
 
 }
 
-a:hover {
-  font-weight: normal;
-  text-decoration-color: black;
+a:hover { /* Endrer på elementene til linktekst når man har musepekeren over */
+  font-weight: normal; /* Gjør at linkenen beholder vanlig tykkelse */
+  text-decoration-color: black; /* Gjør at linjen under blir svart */
 
 }
 
 
-#oslomet-body h1+p {
+#oslomet-body h1+p { /* Gjør at første p-element etter H1 til å ha et spesifikk stil og størrelse*/
   font-weight: normal;
   padding-bottom: 1rem;
   font-size: 2rem;
@@ -87,57 +99,56 @@ a:hover {
 /* nav bar css */
 /* General Header Styles */
 #index-header {
-  height: 7rem;
-  background-color: var(--main-color);
-  display: flex;
-  width: 100%;
-  position: fixed;
-  z-index: 10; /* Ensure it stays on top */
+  height: 7rem; /* Høyden på header */
+  background-color: var(--main-color); /* Bakgrunnsfarge på header */
+  display: flex; /* Bruker flex-box for å plassere logo og listen horisontalt */
+  width: 100%; /* Setter bredden til headeren 100% av skjermen */
+  position: fixed; /* Sørger for at headeren alltid er synlig på toppen av siden */
+  z-index: 10; /* Sørger for at headeren er foran alt annet innhold */
 }
 
 #index-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  margin-left: 10%;
+  display: flex; /* Bruker flex-box til å plassere elementene horisontalt */
+  justify-content: space-between; /* Plasserer elementene med lik avstand mellom dem */
+  align-items: center; /* Justerer elementene vertikalt i midten av containeren */
+  padding: 10px 20px; /* Legger til padding (10px topp/bunn, 20px venstre/høyre) */
+  width: 100%; /* Setter bredden til hele containerens bredde, slik at navigasjonene ligger helt til høyre og logoen til venstre */
+  margin-left: 10%; /* Flytter containeren 10% fra venstre kant */
 }
 
 .logo img {
-  height: 4rem;
+  height: 4rem; /* Setter høyden på logoen */
 }
 
 /* Default Menu Styles (Desktop) */
 .menu {
-  display: flex;
-  list-style: none;
+  display: flex; /* Bruker flex-box til å plassere listen horisontalt */
+  list-style: none; /* Fjerner punktene foran liste elementene */
 }
 
 .menu li {
-  margin-left: 3rem;
+  margin-left: 3rem; /* Gir listen elementene et mellomrom */
 }
 
 .menu a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: black;
+  font-size: 1.5rem; /* Setter tekststørrelsen til link elementene  */
+  text-decoration: none; /* Fjerner standardoppsett for link elementer */
+  
 }
 
 .menu a:hover {
-  color: white;
-  font-weight: normal;
+  color: white; /* Gjør at teksten blir hvit når man har musekepkeren over elementene */
 }
 
-/* Hamburger Menu Styles */
+/* Hamburger Menu */
 .menu-toggle {
-  display: none; /* Hide checkbox by default */
+  display: none; /* Skjuler checkbox elementet fra å synes */
 }
 
 .hamburger {
-  display: none; /* Hidden on larger screens */
-  font-size: 2rem;
-  cursor: pointer;
+  display: none; /* Skjuler hamburger-menyikonet på desktop */
+  font-size: 2rem; /* Setter størrelsen på ikonet til 2rem */
+  cursor: pointer; /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
 }
 
 .item1 {
@@ -153,7 +164,6 @@ a:hover {
 }
 
 #oslomet-body main {
-  height: 100%;
   display: flex;
   justify-content: center;
   /* Centers horizontally */
@@ -273,20 +283,20 @@ a:hover {
 }
 
 .navigasjonknapp a {
-  display: block;
-  padding: 1rem 2rem;
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-
+  display: block;/* Gjør lenken til en blokk for å gjøre det enklere å trykke på */
+  padding: 1rem 2rem;/* Legger til padding */
+  background-color: black;/* Setter bakgrunnsfarge på lenken til svart */
+  color: white;/* Setter tekstfargen til hvit */
+  text-align: center;/* Teksten blsentrert */
+  text-decoration: none;/* Fjerner understrekningen*/
+  font-size: 16px;/*skriftstørrelse */
+  transition: background-color 0.3s ease; /* Legger til en overgangseffekt for bakgrunnsfargen når den endres */
 }
 
+
 .navigasjonknapp a:hover {
-  background-color: white;
-  color: black;
+  background-color: white; /* Når en holder musepeker over knappen, så blir den hvit*/
+  color: black; /* Tekstfargen blir hvit når musepeker er over knappen*/
 }
 
 #navigasjon h2,
@@ -593,21 +603,17 @@ a:hover {
 }
 
 
-.image,
-#jobb img, #læring img,
- #studenthistorier img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-#jobb img, #læring img,
- #studenthistorier img {
+#jobb img, #læring img, #studenthistorier img {
   width: 50%;
   height: auto;
   display: block;
   object-fit: cover;
   max-height: 100%;
+}
+
+.image, #jobb img, #læring img, #studenthistorier img {
+  max-width: 100%;
+  height: auto;
 }
 
 
