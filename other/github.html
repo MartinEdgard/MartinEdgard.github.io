@@ -13,10 +13,14 @@
 
 <header id="index-header">
     <nav id="index-nav">
-        <div class="logo">
-            <img src="../media/OsloMet_logo.svg" alt="OsloMet">
+        <!--navbar med linker til de andre sidene vi har laget.-->
+        <div id="logo">
+            <img src="../media/oslomet_logo.svg" alt="OsloMet">
         </div>
-        <ul class="menu">
+        <!-- Hamburger menyen av og på. Inspirasjon hentet fra https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <ul id="menu">
             <li><a href="../index.html">MatMod</a></li>
             <li><a href="github.html">GitHub</a></li>
             <li><a href="accessibility.html">Tilgjengelighet</a></li>
@@ -25,21 +29,13 @@
     </nav>
 </header>
 
-<body>
-    <img class="image" src="../media/project-management_43991217965_o.jpg" media="(min-width:650px)"
-        alt="Bilde av prosjektleder"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/archives/5002-Utdanning-og-Studentliv/Folder%2052/project-management_43991217965_o.jpg.info#c=%2Ffotoweb%2Farchives%2F5002-Utdanning-og-Studentliv%2F 
-        Fotograf: Benjamin A. Ward-->
-    <main>
-      <section class="item1">
-        <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
-        <p>Bachelorprogram</p>
-    </section>
 
-    <main>
-
-  <article id="jobb">
+<body id="oslomet-body">
+    <h1> Github </h1>
+    <article id="jobb">
     <section class="info-content">
-        <h2>Hva kan du jobbe som?</h2>
+        <!--viser til hva man kan jobbe som etter man har fullført studiet-->
+        <h2>Våre tanker om Github og Liveshare</h2>
         <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet,
             særlig om du velger spesialiseringene vitenskapelige beregninger eller
             statistiske og datadrevne metoder. </p>
@@ -49,15 +45,16 @@
             i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne
             metoder for verdiskaping.</p>
         <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
-        <p><a href="https://ansatt.oslomet.no/oslomet-karriere"> Les mer på OsloMet Karriere</a> </p>
     </section>
-    <img src="media/job_photo.webp" alt="Bilde av person foran tavle">
+    <img src="../media/gitcommithistory.jpg" alt="commit history" loading="lazy">
     <!--Bilde hentet fra https://www.pexels.com/nb-no/bilde/1181345/. Fotograf: Christina Morillo -->
 </article>
 <article id="læring">
-    <img src="media/learn_photo.webp" alt="Bilde av kode">
+    <img src="../media/commithistory.jpg" alt="commit history" loading="lazy">
+
     <!--Bilde hentet fra https://www.pexels.com/nb-no/sok/science/. Fotograf: Markus Spiske -->
     <section class="info-content">
+        <!--viser litt til hva man kommer til å lære om man velger dette studiet-->
         <h2>Hva lærer du?</h2>
         <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk,
             fysikk og statistikk.</p>
@@ -71,14 +68,19 @@
     </section>
 
 </article>
-    </main>
-  </body>
+
+
+
+
+
+
+</body>
 
 
 
 <footer>
     <section id="left-side-footer">
-        <img id="logo-footer" src="media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
+        <img id="logo-footer" src="../media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
         <p>Postboks 4, St. Olavs plass</p>
         <p>0130 Oslo</p>
         <p>Tlf.: 67 23 50 00 </p>
@@ -96,19 +98,19 @@
     </section>
     <section id="right-side-footer">
         <a href="https://www.facebook.com/oslomet/" id="facebook">
-            <img src="media/socialmedia/facebook_hvit.svg" alt="Facebook Logo">
+            <img src="../media/socialmedia/facebook_hvit.svg" alt="Facebook Logo">
             <p>Facebook</p>
         </a>
         <a href="https://x.com/oslomet" id="x">
-            <img src="media/socialmedia/x_hvit.svg" alt="X/Twitter Logo">
+            <img src="../media/socialmedia/x_hvit.svg" alt="X/Twitter Logo">
             <p>X/Twitter</p>
         </a>
         <a href="https://www.linkedin.com/school/oslomet" id="linkedin">
-            <img src="media/socialmedia/linkedin_hvit.svg" alt="LinkedIn Logo">
+            <img src="../media/socialmedia/linkedin_hvit.svg" alt="LinkedIn Logo">
             <p>LinkedIn</p>
         </a>
         <a href="https://www.instagram.com/oslomet/" id="instagram">
-            <img src="media/socialmedia/instagram_hvit.svg" alt="Instagram Logo">
+            <img src="../media/socialmedia/instagram_hvit.svg" alt="Instagram Logo">
             <p>Instagram</p>
         </a>
     </section>

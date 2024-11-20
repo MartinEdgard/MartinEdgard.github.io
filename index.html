@@ -28,13 +28,14 @@
 </head>
 <header id="index-header">
     <nav id="index-nav">
-        <div class="logo">
+        <!--navbar med linker til de andre sidene vi har laget.-->
+        <div id="logo">
             <img src="media/oslomet_logo.svg" alt="OsloMet">
         </div>
-        <!-- Hamburger Toggle -->
+        <!-- Hamburger menyen av og på. Inspirasjon hentet fra https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
         <label for="menu-toggle" class="hamburger">☰</label>
-        <ul class="menu">
+        <ul id="menu">
             <li><a href="index.html">MatMod</a></li>
             <li><a href="other/github.html">GitHub</a></li>
             <li><a href="other/accessibility.html">Tilgjengelighet</a></li>
@@ -44,19 +45,21 @@
 </header>
 
 <body id="oslomet-body">
-
+    <!--innledende toppbilde-->
     <img class="image" src="media/bilde_av_student.webp" alt="Bilde av student"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/
         archives/5002-Utdanning-og-Studentliv/Folder%2052/Arkivvitenskap_SAM_BAW_09.jpg.info#c=%2Ffotoweb%2
         Farchives%2F5002-Utdanning-og-Studentliv%2F Fotograf: Benjamin A. Ward-->
     <main>
         <div class="grid-container">
             <section class="item1">
+                <!--overskrift-->
                 <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
                 <p>Bachelorprogram</p>
             </section>
 
             <section class="item2">
                 <article class="main-box">
+                    <!--viktig info om studiet-->
                     <section>
                         <p>Studiested</p>
                         <p><a href="https://www.oslomet.no/om/studiested-pilestredet">Pilestredet</a></p>
@@ -93,10 +96,12 @@
             </section>
             <aside class="aside">
                 <section>
+                    <!--generell info-->
                     <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
                         samfunnsnyttige oppgaver.</p>
                 </section>
                 <section id="søknadsfrist">
+                    <!--info om å søke og en link til hvordan du søker-->
                     <p>Slik søker du:</p>
                     <p>Du søker på Samordna opptak med studiekode 215 503.</p>
                     <ul>
@@ -115,7 +120,7 @@
 
     </article>
     <section id="navigasjon">
-        <!---->
+        <!--navigasjonsknapper som sender en til forskjellige plasser på siden-->
         <h2>Hva vil du vite?</h2>
         <div class="navigasjonknapp">
             <p><a href="#info-grid">Nøkkelinformasjon</a></p>
