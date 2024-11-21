@@ -151,11 +151,11 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   cursor: pointer; /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
 }
 
-.item1 {
+#title {
   grid-area: header; /* Definerer området for dette elementet som "header" i grid-layouten */
 }
 
-.item2 {
+#left-side-general-info{
   grid-area: left; /* Definerer området for dette elementet som "left" i grid-layouten */
 }
 
@@ -171,7 +171,7 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   padding-bottom: 8rem; /* Legger til mellomrom på bunnen av main-elementet*/
 }
 
-.grid-container {
+#grid-container-general-info {
   display: grid; /* Bruker en grid display */
   grid-template-areas: /* Definerer oppsettet for grid-områdene */
     'header header'
@@ -185,17 +185,18 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 }
 
 
-.main-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 600px;
+#main-box {
+display: grid; /* Bruker CSS Grid Layout */
+grid-template-columns: 1fr 1fr; /* To kolonner med like bredde */
+gap: 20px; /* Avstand mellom grid-elementer */
+max-width: 600px; /* Maksimal bredde for grid-container */
+
 }
 
-.main-box section p:first-of-type {
-  border-top: solid black;
+#main-box section p:first-of-type {
+  border-top: solid black; /*Legger til en heltrukket svart linje */
   padding-top: 1rem;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 .image {
@@ -212,35 +213,35 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   font-size: 1.5rem;
 }
 
-#søknadsfrist {
+#deadline {
   padding-top: 2rem;
 }
 
-#søknadsfrist ul {
+#deadline ul {
   padding-left: 1rem;
   font-size: 1.5rem;
 }
 
-#søknadsfrist p:first-of-type {
+#deadline p:first-of-type {
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-#søknadsfrist p:last-of-type {
+#deadline p:last-of-type {
   margin-top: 0.2rem;
 }
 
 /* scroll til på begge sider */
 
-#navigasjon,
+#navigation,
 #øl-navigasjon {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-
+  align-items: center;
 }
 
-#navigasjon {
+#navigation {
   background-color: var(--main-color);
 
 }
@@ -250,29 +251,30 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   color: white;
 }
 
-#øl-navigasjon .navigasjonsknapp {
+#øl-navigasjon .navigation-button {
   border-radius: 10px;
+  
 }
 
-.navigasjonknapp {
+.navigation-button {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.navigasjonknapp p {
+.navigation-button p {
   display: inline-block;
 
 }
 
 
 
-#navigasjon h2,
+#navigatiion h2,
 #øl-navigasjon h4 {
   text-align: center;
 }
 
-.navigasjonknapp a {
+.navigation-button a {
   display: block;/* Gjør lenken til en blokk  */
   padding: 1rem 2rem;/* Legger til padding */
   background-color: black;/* Setter bakgrunnsfarge på lenken til svart */
@@ -284,12 +286,12 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 }
 
 
-.navigasjonknapp a:hover {
+.navigation-button a:hover {
   background-color: white; /* Når en holder musepeker over knappen, så blir den hvit*/
   color: black; /* Tekstfargen blir hvit når musepeker er over knappen*/
 }
 
-#navigasjon h2,
+#navigation h2,
 #øl-navigasjon h4 {
   margin-bottom: 1rem; /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni øl-navigasjon*/
 }
@@ -307,13 +309,13 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 
 
 
-#jobb {
-  background-color: #28262C; /*Bakgrunnsfargen inni jobb endres */
+#work {
+  background-color: #28262C; /*Bakgrunnsfargen inni work endres */
   color: white; /* Tekstfargen endres til hvit */
 }
 
 
-#jobb h2,
+#work h2,
 #læring h2,
 #studenthistorier h2 {
   margin-bottom: 2rem;
@@ -321,27 +323,27 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 
 
 
-#jobb p,
+#work p,
 #læring p,
 #studenthistorier p {
   padding-bottom: 1rem;
 }
 
-#jobb p:last-child,
+#work p:last-child,
 #studenthistorier p:last-child {
   margin-top: 3rem;
 }
 
-#jobb a {
+#work a {
   color: white;
   font-size: 1rem;
 }
 
-#jobb a:hover {
+#work a:hover {
   text-decoration: underline;
 }
 
-#jobb,
+#work,
 #læring,
 #studenthistorier {
   display: flex;
@@ -592,7 +594,7 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 }
 
 
-#jobb img, #læring img, #studenthistorier img {
+#work img, #læring img, #studenthistorier img {
   width: 50%;
   height: auto;
   display: block;
@@ -600,7 +602,7 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   max-height: 100%;
 }
 
-.image, #jobb img, #læring img, #studenthistorier img {
+.image, #work img, #læring img, #studenthistorier img {
   max-width: 100%;
   height: auto;
 }
@@ -953,14 +955,14 @@ footer a:hover {
 
  
   
-  .grid-container {
+  #grid-container-general-info {
     grid-template-areas:
       'header'
       'left'
       'right';
   }
   
-  .main-box {
+  #main-box {
     font-size: 2rem;
   }
   
@@ -969,18 +971,18 @@ footer a:hover {
     padding-top: 3em;
   }
 
-#navigasjon {
+#navigation {
   place-items: center;
 }
 
-.navigasjonknapp {
+.navigation-button {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0;
   width: 50%;
 }
 
-.navigasjonknapp a {
+.navigation-button a {
   margin-top: 1rem;
 }
 
@@ -993,7 +995,7 @@ footer a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-  #jobb,
+  #work,
   #studenthistorier {
   flex-direction: column;
   align-items: center;
@@ -1004,7 +1006,7 @@ footer a:hover {
   align-items: center;
 }
 
-#jobb img, #læring img, #studenthistorier img {
+#work img, #læring img, #studenthistorier img {
   width: 100%;
   }
 
