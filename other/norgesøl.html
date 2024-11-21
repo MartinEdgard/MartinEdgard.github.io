@@ -12,22 +12,22 @@
 </head>
 
 
-<header id="øl-header">
-    <nav id="øl-nav">
-        <ul class="øl-menu">
+<header id="beer-header">
+    <nav id="beer-nav">
+        <ul class="beer-menu">
             <li><a href="../index.html">MatMod</a></li>
             <li><a href="github.html">GitHub</a></li>
             <li><a href="accessibility.html">Tilgjengelighet</a></li>
             <li><a href="norgesøl.html">Norges Øl</a></li>
         </ul>
     </nav>
-    <video id="øl-video" src="../media/norgesøl_video.webm" autoplay loop muted></video>
+    <video id="beer-video" src="../media/norgesøl_video.webm" autoplay loop muted></video>
     <!--Videoer hentet fra pexels.com. Redigert av gruppens medlemmer.-->
 
 </header>
 
-<body id="øl-body">
-    <section id="om-norgesøl">
+<body id="beer-body">
+    <section id="introduction">
         <!--overskrift og litt om oss-->
         <h1> Hva er Norges Øl? </h1>
         <p> Norges Øl er en plattform dedikert til å løfte frem det beste innen norsk ølkultur og håndverk.
@@ -40,10 +40,10 @@
             Norges Øl er et samlingssted for ølentusiaster og nybegynnere som vil utforske den rike verdenen av norsk
             øltradisjon.</p>
     </section>
-    <section id="øl-navigasjon">
+    <section id="beer-navigation">
         <!--navigasjonsknapp til forskjellige landsdeler-->
         <h4>Naviger til ønsket landsdel</h4>
-        <div class="navigasjonknapp">
+        <div class="navigation-button">
             <p><a href="#østlandet">Østlandet</a></p>
             <!--Inspirassjon fra forumet i denne linken: https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
             <p><a href="#vestlandet">Vestlandet</a></p>
@@ -52,20 +52,20 @@
             <p><a href="#sørlandet">Sørlandet</a></p>
         </div>
     </section>
-    <main id="øl-main">
-        <article id="østlandet" class="landsdel-overskrift">
+    <main id="beer-main">
+        <article id="østlandet" class="county">
             <h2> Østlandet </h2>
         </article>
-        <section id="beer-left">
+        <section class="beer-left">
 
             <div class="beer-info">
                 <h4>Akershus</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Wettre Bryggeri</h3>
                         <img src="../media/fem.svg" alt="fem av fem stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Terapils</h3>
                         <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                     </div>
@@ -92,11 +92,11 @@
             </div>
             <div class="beer-info">
                 <h4>Buskerud</h4>
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>Aass Bryggeri</h3>
                     <img src="../media/firekommafem.svg" alt="4,5 av 5 stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>Halling</h3>
                 </div>
                 <p>Aass Halling er en øl som på mange måter fanger essensen av det norske landskapet og folket.
@@ -111,15 +111,15 @@
                 </div>
             </div>
         </section>
-        <section id="beer-left">
+        <section class="beer-left">
             <div class="beer-info">
                 <h4>Innlandet</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Trysil Bryggeri</h3>
                         <img src="../media/fem.svg" alt="fem av fem stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>1132 Pale Ale</h3>
                         <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                     </div>
@@ -146,11 +146,11 @@
             </div>
             <div class="beer-info">
                 <h4>Oslo</h4>
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>Sagene Bryggeri</h3>
                     <img src="../media/firekommafem.svg" alt="4,5 av 5 stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>Pilsner</h3>
                 </div>
                 <p>Sagene Pilsner er en øl for dem som setter pris på en klassisk, velsmakende pilsner,
@@ -165,15 +165,15 @@
 
 
 
-        <section id="beer-left">
+        <section class="beer-left">
             <div class="beer-info">
                 <h4>Telemark</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Lindheim Ølkompani</h3>
                         <img src="../media/firekommafem.svg" alt="4,5 av 5 stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Lord of Acid</h3>
                         <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                     </div>
@@ -203,11 +203,11 @@
             <div class="beer-info">
                 <h4>Vestfold</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Færder Mikrobryggeri</h3>
                         <img src="../media/fire.svg" alt="4 av 5 stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Skjærgårdpils</h3>
                         <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                     </div>
@@ -222,16 +222,16 @@
 
         </section>
 
-        <section id="beer-left">
+        <section class="beer-left">
 
             <div class="beer-info">
                 <h4>Østfold</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Nøisom</h3>
                         <img src="../media/trekommafem.svg" alt="3,5 av 5 stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Bondfire Blonde</h3>
                     </div>
                 </div>
@@ -249,19 +249,19 @@
             </div>
         </section>
 
-        <article id="vestlandet" class="landsdel-overskrift">
+        <article id="vestlandet" class="county">
             <h2> Vestlandet </h2>
         </article>
 
-        <section id="beer-left">
+        <section class="beer-left">
 
             <div class="beer-info">
                 <h4>Møre og Romsdal</h4>
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>Crave Cave Brewery</h3>
                     <img src="../media/fire.svg" alt="fire av fem stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>Atlantic Ocean</h3>   
                 </div>
                 <p>Crave Cave Atlantic Ocean er en IPA som fanger essensen av det åpne havet – frisk, kraftfull og
@@ -291,11 +291,11 @@
             <div class="beer-info">
                 <h4>Rogaland</h4>
                 <div class="header-container">
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>Lervig</h3>
                     <img src="../media/fem.svg" alt="fem av fem stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>Tasty Juice</h3>
                     <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                 </div>
@@ -310,15 +310,15 @@
 
         </section>
 
-        <section id="beer-left">
+        <section class="beer-left">
             <div class="beer-info">
                 <h4>Vestland</h4>
                 <div class="header-container">
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>7 Fjell Bryggeri</h3>
                     <img src="../media/trekommafem.svg" alt="3,5 av fem stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>Ginger Ninja</h3>
                     <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                 </div>
@@ -339,19 +339,19 @@
             </div>
         </section>
 
-        <article id="nord-norge" class="landsdel-overskrift">
+        <article id="nord-norge" class="county">
             <h2> Nord-Norge </h2>
         </article>
-        <section id="beer-left">
+        <section class="beer-left">
 
             <div class="beer-info">
                 <h4>Finnmark</h4>
                 <div class="header-container">
-                <div id="bryggeri">
+                <div class="brewery">
                     <h3>Qwænbrygg</h3>
                     <img src="../media/fem.svg" alt="fem av fem stjerner">
                 </div>
-                <div id="ølnavn">
+                <div class="beer-name">
                     <h3>#100</h3>
                 </div>
                 </div>
@@ -379,11 +379,11 @@
             <div class="beer-info">
                 <h4>Nordland</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Lofotpils</h3>
                         <img src="../media/trekommafem.svg" alt="trekommafem av fem stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Fjell Stout</h3>
                     </div>
                 </div>
@@ -399,15 +399,15 @@
                 
             </div>
         </section>
-        <section id="beer-left">
+        <section class="beer-left">
             <div class="beer-info">
                 <h4>Troms</h4>
                     <div class="header-container">
-                        <div id="bryggeri">
+                        <div class="brewery">
                             <h3>Mack Ølbryggeri</h3>
                             <img src="../media/fem.svg" alt="fem av fem stjerner">
                         </div>
-                        <div id="ølnavn">
+                        <div class="beer-name">
                             <h3>Isbjørn Sommerøl</h3>
                             <img src="../media/logomark_stjerne.svg" alt="Stjerne">
                         </div>
@@ -430,20 +430,20 @@
             </div>
 
         </section>
-        <article id="trøndelag" class="landsdel-overskrift">
+        <article id="trøndelag" class="county">
             <h2> Trøndelag </h2>
         </article>
 
-        <section id="beer-left">
+        <section class="beer-left">
 
             <div class="beer-info">
                 <h4>Trøndelag</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>E.C. Dahls Bryggerier</h3>
                         <img src="../media/fire.svg" alt="fire av fem stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>Bolt IPA</h3>
                     </div>
                 </div>
@@ -465,18 +465,18 @@
         </section>
 
 
-        <article id="sørlandet" class="landsdel-overskrift">
+        <article id="sørlandet" class="county">
             <h2> Sørlandet </h2>
         </article>
-        <section id="beer-left">
+        <section class="beer-left">
             <div class="beer-info">
                 <h4>Agder</h4>
                 <div class="header-container">
-                    <div id="bryggeri">
+                    <div class="brewery">
                         <h3>Nøgne Ø</h3>
                         <img src="../media/firekommafem.svg" alt="firekommafem av fem stjerner">
                     </div>
-                    <div id="ølnavn">
+                    <div class="beer-name">
                         <h3>India Pale Ale</h3>
                     </div>
                 </div>
@@ -497,13 +497,14 @@
             </div>
         </section>
     </main>
-    <a id="øl-scroll" href="#øl-header">
+    <a id="beer-scroll" href="#beer-header">
         <p>Til toppen</p>
     </a>
 </body>
 
 
 <footer>
+    <!--Logo og info om norges øl-->
     <section id="left-side-footer">
         <img id="logo-footer" src="../media/norgesøl_textlogo.svg" alt="Norges Øl logo">
         <p>ELLEN GLEDITSCHS HUS, Pilestredet 35</p>
@@ -515,6 +516,7 @@
 
 
     <section id="right-side-footer">
+        <!--sosial medier-->
         <a href="https://www.facebook.com/oslomet/" id="facebook">
             <img src="../media/socialmedia/facebook_hvit.svg" alt="Facebook Logo">
             <p>Facebook</p>

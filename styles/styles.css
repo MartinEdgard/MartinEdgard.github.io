@@ -1,8 +1,9 @@
 /* Table of contents 
-
-
-
-
+1. Default styling for alle elementer
+2. Størrelser på overskrifter
+3. Default styling for alle a elementer
+4. Header
+5. Body
 
 
 
@@ -12,7 +13,7 @@
 */
 
 
-
+/* 1. Default styling for alle elementer */
 :root {
   --main-color: #05A8AA; /* Hovedfarge som kan brukes på flere elementer */
   --bckgray-color: #E7E7E7; /* Grå bakgrunnsfarge */
@@ -38,7 +39,7 @@ body {
   margin: auto; /* Midtstiller kroppen i forhold til vinduet */
 }
 
-
+/* 2. Størrelser på overskrifter */
 #oslomet-body h1 {
   font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
@@ -55,24 +56,24 @@ body {
   font-size: 1.2rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
-#øl-body h1 {
+#beer-body h1 {
   font-size: 7rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
   text-align: center; /* Sentrerer t */
 }
 
-#øl-body h2 {
+#beer-body h2 {
   font-size: 5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
-#øl-body h3 {
+#beer-body h3 {
   font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
-#øl-body h4 {
+#beer-body h4 {
   font-size: 1.5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
-
+/* 3. Default styling for alle a elementer */
 
 a {
   color: black; /* Setter tekstfargen på alle linker til svart */
@@ -95,9 +96,7 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   font-size: 2rem;
 }
 
-
-/* nav bar css */
-/* General Header Styles */
+/* 4. Header */
 #index-header {
   height: 7rem; /* Høyden på header */
   background-color: var(--main-color); /* Bakgrunnsfarge på header */
@@ -120,7 +119,17 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   height: 4rem; /* Setter høyden på logoen */
 }
 
-/* Default Menu Styles (Desktop) */
+/* Header for git siden */
+#git-header {
+  height: 7rem; /* Høyden på header */
+  background-color: var(--main-color); /* Bakgrunnsfarge på header */
+  display: flex; /* Bruker flex-box for å plassere logo og listen horisontalt */
+  width: 100%; /* Setter bredden til headeren 100% av skjermen */
+  position: absolute; /* Sørger for at headeren alltid er synlig på toppen av siden */
+  z-index: 10; /* Sørger for at headeren er foran alt annet innhold */
+}
+
+/* Styling for listen inne i headeren */
 #menu {
   display: flex; /* Bruker flex-box til å plassere listen horisontalt */
   list-style: none; /* Fjerner punktene foran liste elementene */
@@ -140,7 +149,7 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   color: white; /* Gjør at teksten blir hvit når man har musekepkeren over elementene */
 }
 
-/* Hamburger Menu */
+/* Hamburger meny */
 .menu-toggle {
   display: none; /* Skjuler checkbox elementet fra å synes */
 }
@@ -151,19 +160,48 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   cursor: pointer; /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
 }
 
-#title {
-  grid-area: header; /* Definerer området for dette elementet som "header" i grid-layouten */
+/* Header for norges øl siden */
+#beer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#left-side-general-info{
-  grid-area: left; /* Definerer området for dette elementet som "left" i grid-layouten */
+#beer-video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.aside {
-  grid-area: right; /* Definerer området for dette elementet som "right" i grid-layouten */
-  padding-left: 5rem; /* Legger til mellomrom på venstre side */
+#beer-nav {
+  position: absolute;
+  width: 100%;
+  padding: 3rem;
+  z-index: 2;
 }
 
+.beer-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.beer-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.beer-menu li a:hover {
+  text-decoration: underline;
+}
+
+
+/* 5. Body */
 #oslomet-body main {
   display: flex; 
   justify-content: center; /* Midtstiller innholdet horisontalt */
@@ -184,13 +222,24 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
   box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde/høyde */
 }
 
+#title {
+  grid-area: header; /* Definerer området for dette elementet som "header" i grid-layouten */
+}
+
+#left-side-general-info{
+  grid-area: left; /* Definerer området for dette elementet som "left" i grid-layouten */
+}
+
+.aside {
+  grid-area: right; /* Definerer området for dette elementet som "right" i grid-layouten */
+  padding-left: 5rem; /* Legger til mellomrom på venstre side */
+}
 
 #main-box {
 display: grid; /* Bruker CSS Grid Layout */
 grid-template-columns: 1fr 1fr; /* To kolonner med like bredde */
 gap: 20px; /* Avstand mellom grid-elementer */
 max-width: 600px; /* Maksimal bredde for grid-container */
-
 }
 
 #main-box section p:first-of-type {
@@ -231,10 +280,10 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   margin-top: 0.2rem;
 }
 
-/* scroll til på begge sider */
+/* Navigation for norges øl og index */
 
 #navigation,
-#øl-navigasjon {
+#beer-navigation {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -246,20 +295,14 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 }
 
-#øl-navigasjon {
+#beer-navigation {
   background-color: var(--beer-color);
   color: white;
 }
 
-#øl-navigasjon .navigation-button {
+#beer-navigation .navigation-button {
   border-radius: 10px;
   
-}
-
-.navigation-button {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .navigation-button p {
@@ -267,10 +310,8 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 }
 
-
-
 #navigatiion h2,
-#øl-navigasjon h4 {
+#beer-navigation h4 {
   text-align: center;
 }
 
@@ -292,13 +333,13 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 }
 
 #navigation h2,
-#øl-navigasjon h4 {
-  margin-bottom: 1rem; /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni øl-navigasjon*/
+#beer-navigation h4 {
+  margin-bottom: 1rem; /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni beer-navigation*/
 }
 
 
-
-.info-content {
+/* Styling for bilde og tekstboks ved siden av hverandre */
+.text-box {
   margin: auto; 
   width: 100%; /* Gjør elementet like bredt som det tilgjengelige området */
   padding: 1rem; /* Gir plass rundt innholdet */
@@ -307,30 +348,49 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   margin-left: 3rem; /* Flytter elementet 3rem til høyre */
 }
 
+#work,
+#learn,
+#student-stories {
+  display: flex;
+}
 
 
-#work {
+#work, #student-stories {
   background-color: #28262C; /*Bakgrunnsfargen inni work endres */
   color: white; /* Tekstfargen endres til hvit */
 }
 
+#learn {
+  background-color: var(--bckgray-color);
+}
 
 #work h2,
-#læring h2,
-#studenthistorier h2 {
+#learn h2,
+#student-stories h2 {
   margin-bottom: 2rem;
 }
 
+#student-stories h3 {
+  padding-bottom: 2rem;
+}
 
+#student-stories h3 a {
+  text-decoration: none;
+}
+
+#student-stories a {
+  color: white;
+  text-decoration: underline;
+}
 
 #work p,
-#læring p,
-#studenthistorier p {
+#learn p,
+#student-stories p {
   padding-bottom: 1rem;
 }
 
 #work p:last-child,
-#studenthistorier p:last-child {
+#student-stories p:last-child {
   margin-top: 3rem;
 }
 
@@ -343,23 +403,25 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   text-decoration: underline;
 }
 
-#work,
-#læring,
-#studenthistorier {
-  display: flex;
+/* Bilder i work, learn og student-stories */
+#work img, #learn img, #student-stories img {
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 100%;
 }
 
-
-#læring {
-  background-color: var(--bckgray-color);
+.image, #work img, #learn img, #student-stories img {
+  max-width: 100%;
+  height: auto;
 }
 
-
+/* styling av requirements, teaching og tuition */
 #info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 5rem;
-
 }
 
 #info-grid li {
@@ -368,98 +430,69 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 #info-grid p {
   padding-top: 1rem;
-}
+} 
 
-
-#opptakskrav, #undervisning {
+#requirements, #teaching {
   margin: 1rem;
   border-right: solid black;
 }
 
-#opptakskrav p {
+#requirements p, #teaching p, #tuition p {
   padding-bottom: 1rem;
 }
 
-
-#opptakskrav li {
+#requirements li, #teaching li {
   padding-left: 1rem;
-
 }
 
-#undervisning p {
-  padding-bottom: 1rem;
-}
-
-#undervisning li {
-  padding-left: 1rem;
-
-}
-
-#kost {
+#tuition {
   margin: 1rem;
 }
 
-#kost  p {
-  padding-bottom: 1rem;
-}
-
-#kost a p {
-  padding-bottom: 0;
-  padding-top: 0;
-  font-size: 0.8rem;
-}
-
-
-
-#kost h3:nth-of-type(2) {
+#tuition h3:nth-of-type(2) {
   margin-top: 1rem;
 }
 
-#master {
-  display: flex;
-}
-
-#master td:not(:last-of-type) {
-  border-right: solid black;
-}
-
-
-#background_studieløp {
-  background-color: var(--bckgray-color);
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+#tuition a p {
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 0.8rem;
 }
 
 #master-link {
   text-decoration: none;
 }
 
-#studieløp,
-#tilleggsInfo {
+/* Studieløp */
+#background-academic-path {
+  background-color: var(--bckgray-color);
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#academic-path,
+#additional-info {
   display: grid;
   margin: auto;
   justify-content: center;
-  /* Centers horizontally */
   align-items: center;
   width: 80%;
 }
 
-#studieløp h3 {
+#academic-path h3 {
   padding-bottom: 0.5rem;
 }
 
-#studieløp h3:not(:first-of-type) {
+#academic-path h3:not(:first-of-type) {
   padding-top: 1rem;
 }
 
-#studieløp h4 {
+#academic-path h4 {
   padding-bottom: 1rem;
 }
 
-
-
-#studieløp p {
+#academic-path p {
   font-weight: normal;
   font-size: 0.8rem;
 }
@@ -474,50 +507,35 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   width: 80%
 }
 
-.semester h5 {
-  border-top: 1px solid var(--main-color);
-  padding-top: 0.5rem;
-  margin-top: 1rem;
-}
-
-#studieløp table {
+#academic-path table {
   width: 100%;
 }
 
-#studieløp th {
+#academic-path th {
   text-align: left;
   width: 33%;
   border-bottom: solid var(--main-color);
 }
 
-
-#studieløp td {
+#academic-path td {
   padding: 0.8rem;
 }
 
-
-#studieløp td:not(:last-of-type) {
+#academic-path td:not(:last-of-type) {
   border-right: dashed var(--main-color);
 }
 
-
-#spørsmål {
+/* Styling for additional info */
+#questions {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-#spørsmål h3 {
+#questions h3 {
   margin-bottom: 1rem;
 }
 
-
-#fagligLeder a {
-  display: block;
-  text-decoration: none;
-  margin-top: 2rem;
-}
-
-#fagligLeder a>div {
+#subject-leader a > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 50%;
@@ -527,94 +545,55 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   padding-bottom: 1rem;
 }
 
-#lederinfo h4 {
+#subject-leader h4 {
   margin-bottom: 1rem;
 }
 
-#fagligLeder img {
+#subject-leader a {
+  display: block;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+#subject-leader img {
   max-width: 100px;
   height: auto;
 }
 
-
-#interessert {
+#other-studies {
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
 
-#interessert div {
+#other-studies div {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#interessert h4 {
+#other-studies h4 {
   margin-top: 1.2rem;
 }
 
-#interessert-top a:nth-child(n+3) {
-  border-top: solid black;
-}
-
-#interessert-bottom a {
-  border-top: solid black;
-}
-
-
-#interessert p {
+#other-studies p {
   padding-bottom: 1.5rem;
   font-size: 1rem;
 }
 
-#interessert a {
+#other-studies a {
   text-decoration: none;
   display: block;
 }
 
-#studenthistorier {
-  background-color: #28262C;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+#other-studies-top a:nth-child(n+3) {
+  border-top: solid black;
 }
 
-#studenthistorier h3 {
-  padding-bottom: 2rem;
+#other-studies-bottom a {
+  border-top: solid black;
 }
 
-
-
-#studenthistorier h3 a {
-  text-decoration: none;
-}
-
-#studenthistorier a {
-  color: white;
-  text-decoration: underline;
-}
-
-
-#work img, #læring img, #studenthistorier img {
-  width: 50%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 100%;
-}
-
-.image, #work img, #læring img, #studenthistorier img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-#info-grid img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-#nyhetsbrev {
+/* Nyhetsbrev */
+#news-letter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,7 +602,7 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   border-bottom: solid black;
 }
 
-#nyhetsbrevknapp {
+#news-letter-button {
   background-color: black;
   color: white;
   border: none;
@@ -634,180 +613,44 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   transition: background-color 0.3s ease;
 }
 
-#nyhetsbrevknapp:hover {
+#news-letter-button:hover {
   background: white;
   color: black;
 }
 
+/* Norges øl */
 
-
-/* footer */
-
-footer {
-
-  background-color: var(--footer-color); /* Bakgrunnsfarge på footer */
-  display: flex; 
-  height: 20rem; /* Høyden på footer */
-  width: 100%; /* Bredden på footer */
-  justify-content: center;
-}
-
-
-#left-side-footer {
-  margin-top: 4rem; 
-  margin-right: 10rem; 
-  color: white;
-}
-
-#logo-footer {
-  width: 25rem;
-  object-fit: contain;
-  margin-bottom: 2rem;
-}
-
-footer a {
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-#mid-footer {
-  margin-right: 1rem;
-  margin-top: 4rem;
-  color: white;
-  width: 30%;
-}
-
-#right-side-footer {
-  margin-top: 4rem;
-  margin-left: 5rem
-}
-
-#right-side-footer img {
-  max-width: 30%;
-  margin-right: 0.3rem;
-}
-
-#facebook,
-#x,
-#linkedin,
-#instagram {
-  display: flex;
-  align-items: center;
-}
-
-#x,
-#linkedin,
-#instagram {
-  margin-top: 1rem;
-}
-
-#øl-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-#øl-video {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  /* Ensure the video is behind other content */
-
-}
-
-#øl-nav {
-  position: absolute;
-  width: 100%;
-  padding: 3rem;
-  z-index: 2;
-}
-
-.øl-menu {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.øl-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.øl-menu li a:hover {
-  text-decoration: underline;
-}
-
-
-#norgesøl_textlogo {
-  max-width: 50%;
-  padding-bottom: 2rem;
-}
-
-#norgesøl_logomark {
-  padding-top: 2rem;
-  max-width: 10%;
-}
-
-#øl-main {
-  margin: 0;
-}
-
-#om-norgesøl {
+#introduction {
   padding: 4rem;
   width: 80%;
   margin: 0 auto;
 }
 
-#om-norgesøl p {
+#introduction p {
   font-size: 1.5rem;
   padding-top: 1rem;
 }
 
+#beer-main {
+  margin: 0;
+}
 
-#øl-main h4 {
+#beer-main h4 {
   font-weight: normal;
 }
 
-#øl-main p {
+#beer-main p {
   margin-top: 1rem;
 }
 
-
-.landsdel-overskrift {
+.county {
   padding: 2rem;
   text-align: center;
   color: white;
   background-color: var(--beersecondary-color);
 }
 
-#øl-container {
-  align-items: center;
-  margin: 0;
-
-}
-
-#øl-container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 100%;
-}
-
-#beer-left, #beer-right {
+.beer-left, #beer-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -816,7 +659,6 @@ footer a:hover {
   border-bottom: solid var(--beersecondary-color);
   border-width: 0.3rem;
   place-items: center;
-
 }
 
 .header-container img {
@@ -824,21 +666,21 @@ footer a:hover {
   margin: 0;
 }
 
-#bryggeri {
+.brewery {
   margin-top: 1rem;
   display: flex;
   flex-direction: column-reverse;
 }
 
-#bryggeri h3 {
+.brewery h3 {
   font-weight: normal;
 }
 
-#bryggeri img {
+.brewery img {
   width:6rem;
 }
 
-#ølnavn {
+.beer-name {
   display: flex;
 }
 
@@ -867,7 +709,7 @@ footer a:hover {
 }
 
 /* Scroll til toppen kanpp */
-#øl-scroll, #scroll {
+#beer-scroll, #scroll {
   position: fixed; /* Sørger for at knappen alltid vises på skjermen */
   bottom: 10px; /* Plasserer knappen 10px fra bunnen av skjermen */
   right: 10px; /* Plasserer knappen 10px fra høyre kant av skjermen */
@@ -876,7 +718,7 @@ footer a:hover {
   text-decoration: none;
 }
 
-#øl-scroll {
+#beer-scroll {
   background-color: var(--beer-color);
   color: white;
 }
@@ -885,6 +727,69 @@ footer a:hover {
   background-color: var(--main-color);
 } 
 
+/*accessibility*/
+.accessibility-main {
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--footer-color); /* Bakgrunnsfarge på footer */
+  display: flex; 
+  height: 20rem; /* Høyden på footer */
+  width: 100%; /* Bredden på footer */
+  justify-content: center;
+}
+
+footer a {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#left-side-footer {
+  margin-top: 4rem; 
+  margin-right: 10rem; 
+  color: white;
+}
+
+#logo-footer {
+  width: 25rem;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+#mid-footer {
+  margin-right: 1rem;
+  margin-top: 4rem;
+  color: white;
+  width: 30%;
+}
+
+#right-side-footer {
+  margin-top: 4rem;
+  margin-left: 5rem
+}
+
+#right-side-footer img {
+  max-width: 30%;
+  margin-right: 0.3rem;
+}
+
+#facebook,
+#x,
+#linkedin,
+#instagram {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
 /*Mobil*/
 
@@ -916,6 +821,7 @@ footer a:hover {
     z-index: 10;
   }
 
+  
   .hamburger {
     display: block; /* Show hamburger button */
   }
@@ -987,7 +893,7 @@ footer a:hover {
 }
 
 
-  .info-content {
+  .text-box {
     width: 80%;
   }
 
@@ -996,17 +902,17 @@ footer a:hover {
 }
 
   #work,
-  #studenthistorier {
+  #student-stories {
   flex-direction: column;
   align-items: center;
 }
 
-#læring {
+#learn {
   flex-direction: column-reverse;
   align-items: center;
 }
 
-#work img, #læring img, #studenthistorier img {
+#work img, #learn img, #student-stories img {
   width: 100%;
   }
 
@@ -1014,7 +920,7 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
-  #undervisning, #opptakskrav {
+  #teaching, #requirements {
     border-right: none;
     border-bottom: solid black;
   }
@@ -1023,15 +929,15 @@ footer a:hover {
     padding-left: 1.5em;
   }
 
-  #interessert {
+  #other-studies {
     padding: 2rem;
   }
 
-  #interessert div {
+  #other-studies div {
     grid-template-columns: 1fr;
   }
 
-  #interessert-top a:nth-child(2) {
+  #other-studies-top a:nth-child(2) {
     border-top: solid black;
   }
 
@@ -1039,20 +945,20 @@ footer a:hover {
     padding-bottom: 2rem;
   }
 
-  #nyhetsbrev {
+  #news-letter {
     flex-direction: column;
     
   }
 
-  #nyhetsbrevknapp {
+  #news-letter-button {
     margin: 0;
   }
-  #beer-left, #beer-right {
+  .beer-left, #beer-right {
     display: flex;
     margin-left: 0%;
   }
 
-#beer-left {
+.beer-left {
   flex-direction: column-reverse;
 }
 
@@ -1071,20 +977,20 @@ footer a:hover {
 }
 
 
-#øl-body p, #øl-body a {
+#beer-body p, #beer-body a {
 font-size: 2rem;
 }
 
-#øl-body h4 {
+#beer-body h4 {
   font-size: 3rem;
 }
 
-#øl-navigasjon {
+#beer-navigation {
   justify-content: center;
   align-items: center;
 }
 
-#øl-navigasjon h4 {
+#beer-navigation h4 {
   font-size: 2.5rem;
 }
 
@@ -1123,7 +1029,7 @@ font-size: 2rem;
 }
  
 
-  #scroll, #øl-scroll {
+  #scroll, #beer-scroll {
     display: none;
   }
 }
@@ -1133,7 +1039,7 @@ font-size: 2rem;
     font-size: 0.75rem;
   }
 
-  #scroll, #øl-scroll {
+  #scroll, #beer-scroll {
     display: none;
   }
 }

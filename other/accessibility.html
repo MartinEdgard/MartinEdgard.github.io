@@ -12,75 +12,55 @@
 </head>
 <header id="index-header">
     <nav id="index-nav">
-      <div class="logo">
-        <img src="../media/oslomet_logo.svg" alt="OsloMet">
-      </div>
-      <!-- Hamburger Toggle -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">☰</label>
-      <ul class="menu">
-        <li><a href="../index.html">MatMod</a></li>
-        <li><a href="github.html">GitHub</a></li>
-        <li><a href="accessibility.html">Tilgjengelighet</a></li>
-        <li><a href="norgesøl.html">Norges Øl</a></li>
-      </ul>
+        <!--navbar med linker til de andre sidene vi har laget.-->
+        <div id="logo">
+            <img src="media/oslomet_logo.svg" alt="OsloMet">
+        </div>
+        <!-- Hamburger menyen av og på. Inspirasjon hentet fra https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <ul id="menu">
+            <li><a href="index.html">MatMod</a></li>
+            <li><a href="other/github.html">GitHub</a></li>
+            <li><a href="other/accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="other/norgesøl.html">Norges Øl</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
   
-  <body>
-    <img class="image" src="../media/project-management_43991217965_o.jpg" media="(min-width:650px)"
-        alt="Bilde av prosjektleder"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/archives/5002-Utdanning-og-Studentliv/Folder%2052/project-management_43991217965_o.jpg.info#c=%2Ffotoweb%2Farchives%2F5002-Utdanning-og-Studentliv%2F 
-        Fotograf: Benjamin A. Ward-->
-    <main>
-      <section class="item1">
-        <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
-        <p>Bachelorprogram</p>
-    </section>
+  
+  <body id="oslomet-body">
+    <!--innledende toppbilde-->
+    <img class="image" src="../media/bilde_av_student.webp" alt="Bilde av student"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/
+        archives/5002-Utdanning-og-Studentliv/Folder%2052/Arkivvitenskap_SAM_BAW_09.jpg.info#c=%2Ffotoweb%2
+        Farchives%2F5002-Utdanning-og-Studentliv%2F Fotograf: Benjamin A. Ward-->
+        <main class="accessibility-main">
+            <section>
+                <h2>Universell tilgjengelighet</h2>
+                <p>Når det gjeller nettsider er det veldig viktig at de er brukervennlige slik at flest mulige mennesker kan bruke den.
 
-    <main>
+                </p>
+                <h2>Planlegging</h2>
+                <h2>Tilgjengelighet av Table</h2>
+                <h2>NAV-baren</h2>
+                <h2>Automatiserte tester</h2>
 
-  <article id="jobb">
-    <section class="info-content">
-        <h2>Hva kan du jobbe som?</h2>
-        <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet,
-            særlig om du velger spesialiseringene vitenskapelige beregninger eller
-            statistiske og datadrevne metoder. </p>
-        <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier,
-            men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
-        <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag,
-            i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne
-            metoder for verdiskaping.</p>
-        <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
-        <p><a href="https://ansatt.oslomet.no/oslomet-karriere"> Les mer på OsloMet Karriere</a> </p>
-    </section>
-    <img src="media/job_photo.webp" alt="Bilde av person foran tavle">
-    <!--Bilde hentet fra https://www.pexels.com/nb-no/bilde/1181345/. Fotograf: Christina Morillo -->
-</article>
-<article id="læring">
-    <img src="media/learn_photo.webp" alt="Bilde av kode">
-    <!--Bilde hentet fra https://www.pexels.com/nb-no/sok/science/. Fotograf: Markus Spiske -->
-    <section class="info-content">
-        <h2>Hva lærer du?</h2>
-        <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk,
-            fysikk og statistikk.</p>
-        <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i
-            medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer. </p>
-        <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for
-            å få enfelles forståelse av tematikken.</p>
-        <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger
-            i arbeidslivet.</p>
-        <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
-    </section>
 
-</article>
-    </main>
-  </body>
 
+
+
+            </section>
+        </main>
+
+
+  
+  
+    </body>
 
 
 <footer>
     <section id="left-side-footer">
-        <img id="logo-footer" src="media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
+        <img id="logo-footer" src="../media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
         <p>Postboks 4, St. Olavs plass</p>
         <p>0130 Oslo</p>
         <p>Tlf.: 67 23 50 00 </p>
@@ -98,19 +78,19 @@
     </section>
     <section id="right-side-footer">
         <a href="https://www.facebook.com/oslomet/" id="facebook">
-            <img src="media/socialmedia/facebook_hvit.svg" alt="Facebook Logo">
+            <img src="../media/socialmedia/facebook_hvit.svg" alt="Facebook Logo">
             <p>Facebook</p>
         </a>
         <a href="https://x.com/oslomet" id="x">
-            <img src="media/socialmedia/x_hvit.svg" alt="X/Twitter Logo">
+            <img src="../media/socialmedia/x_hvit.svg" alt="X/Twitter Logo">
             <p>X/Twitter</p>
         </a>
         <a href="https://www.linkedin.com/school/oslomet" id="linkedin">
-            <img src="media/socialmedia/linkedin_hvit.svg" alt="LinkedIn Logo">
+            <img src="../media/socialmedia/linkedin_hvit.svg" alt="LinkedIn Logo">
             <p>LinkedIn</p>
         </a>
         <a href="https://www.instagram.com/oslomet/" id="instagram">
-            <img src="media/socialmedia/instagram_hvit.svg" alt="Instagram Logo">
+            <img src="../media/socialmedia/instagram_hvit.svg" alt="Instagram Logo">
             <p>Instagram</p>
         </a>
     </section>

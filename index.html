@@ -125,14 +125,14 @@
         <div class="navigation-button">
             <p><a href="#info-grid">Nøkkelinformasjon</a></p>
             <!--Inspirassjon fra forumet i denne linken: https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
-            <p><a href="#studieløp">Studiets oppbygning</a></p>
-            <p><a href="#spørsmål">Spørsmål til utdanningen</a></p>
+            <p><a href="#academic-path">Studiets oppbygning</a></p>
+            <p><a href="#questions">Spørsmål til utdanningen</a></p>
         </div>
     </section>
 
 
     <article id="work">
-        <section class="info-with">
+        <section class="text-box">
             <!--viser til hva man kan jobbe som etter man har fullført studiet-->
             <h2>Hva kan du jobbe som?</h2>
             <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet,
@@ -149,11 +149,11 @@
         <img src="media/job_photo.webp" alt="Bilde av person foran tavle" loading="lazy">
         <!--Bilde hentet fra https://www.pexels.com/nb-no/bilde/1181345/. Fotograf: Christina Morillo -->
     </article>
-    <article id="læring">
+    <article id="learn">
         <img src="media/learn_photo.webp" alt="Bilde av kode" loading="lazy">
 
         <!--Bilde hentet fra https://www.pexels.com/nb-no/sok/science/. Fotograf: Markus Spiske -->
-        <section class="info-content">
+        <section class="text-box">
             <!--viser litt til hva man kommer til å lære om man velger dette studiet-->
             <h2>Hva lærer du?</h2>
             <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk,
@@ -169,7 +169,7 @@
 
     </article>
     <article id="info-grid">
-        <section id="opptakskrav">
+        <section id="requirements">
             <!--viser til linker og fag for opptakskravene-->
             <h3>Opptakskrav og poeng</h3>
             <p>For å søke på dette programmet må du ha:</p>
@@ -186,7 +186,7 @@
                 på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">
                     bestått ettårig forkurs for ingeniørutdanning</a>.</p>
         </section>
-        <section id="undervisning">
+        <section id="teaching">
             <!--en liste som viser til hvordan man kommer til å jobbe på studiet-->
             <h3>Hvordan foregår undervisningen?</h3>
             <p>Undervisningen er en kombinasjon av</p>
@@ -204,7 +204,7 @@
             <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per
                 uke på studierelatert arbeid gjennom hele semesteret. </p>
         </section>
-        <section id="kost">
+        <section id="tuition">
             <!--viser til linker der du betaler semesteravgift, link til utenlandske studenter og link til videre studiemuligheter-->
             <h3>Hva koster det?</h3>
             <p><a href="https://student.oslomet.no/en/web/student/semester-fee">Du betaler en semesteravgift
@@ -221,8 +221,8 @@
             </a>
         </section>
     </article>
-    <div id="background_studieløp">
-        <article id="studieløp">
+    <div id="background-academic-path">
+        <article id="academic-path">
             <!-- Bruk av table for å vise studiets oppbygning med link til hvert fag. Scope på th for screenreader-->
             <h2>Studiets oppbygging</h2>
             <h3>1. studieår</h3>
@@ -753,13 +753,13 @@
             </section>
         </article>
     </div>
-    <article id="tilleggsInfo">
-        <section id="spørsmål">
+    <article id="additional-info">
+        <section id="questions">
             <h3>Spørsmål om utdanningen?</h3>
             <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen,
                 kontakt oss gjennom vårt kontaktskjema.</a>
         </section>
-        <section id="fagligLeder">
+        <section id="subject-leader">
             <!--link, bilde og info om faglig leder-->
             <h3>Faglig leder</h3>
             <a href="https://www.oslomet.no/om/ansatt/krhel3944/">
@@ -777,9 +777,9 @@
             </a>
         </section>
 
-        <section id="interessert">
+        <section id="other-studies">
             <h3>Du er kanskje også interessert i disse?</h3>
-            <div id="interessert-top">
+            <div id="other-studies-top">
                 <!-- Laget som en grid (en top og en bottom) for å vise fram studier de kanskje er interessert i.-->
                 <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
                     <h4>Anvendt datateknologi</h4>
@@ -798,7 +798,7 @@
                     <p>Bachelorprogram | 3 år | Pilestredet i Oslo | Heltid</p>
                 </a>
             </div>
-            <div id="interessert-bottom">
+            <div id="other-studies-bottom">
                 <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior">
                     <h4>Elektronikkingenør</h4>
                     <p>Bachelorprogram | 3 år | Pilestredet i Oslo | Heltid</p>
@@ -818,9 +818,9 @@
             </div>
         </section>
     </article>
-    <article id="studenthistorier">
+    <article id="student-stories">
 
-        <section class="info-content">
+        <section class="text-box">
             <!--tekst og link til Studenthistorier-->
             <h2>Studenthistorier</h2>
             <h3><a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">Spå
@@ -834,10 +834,10 @@
         <!--Bilde hentet fra https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap. Fotograf: Oda Hveem / OsloMet -->
 
     </article>
-    <section id="nyhetsbrev">
+    <section id="news-letter">
         <!--knapp med link til nyhetsbrevsiden til Oslomet-->
         <h2 id="infomelding">Hold deg oppdatert på hva som skjer på OsloMet.</h2>
-        <p> <a id="nyhetsbrevknapp" href="https://www.oslomet.no/nyhetsbrev" alt="Link til Nyhetsbrev"> Abonner på vårt
+        <p> <a id="news-letter-button" href="https://www.oslomet.no/nyhetsbrev" alt="Link til Nyhetsbrev"> Abonner på vårt
                 nyhetsbrev!</a></p>
 
     </section>
