@@ -1,4 +1,5 @@
 /* Table of contents 
+
 1. Default styling for alle elementer
 2. Størrelser på overskrifter
 3. Default styling for alle a elementer
@@ -42,65 +43,88 @@
 
 /* 1. Default styling for alle elementer */
 :root {
-  --main-color: #05A8AA; /* Hovedfarge som kan brukes på flere elementer */
-  --bckgray-color: #E7E7E7; /* Grå bakgrunnsfarge */
-  --footer-color: #28262C; /* Farge for bunntekst */
-  --beer-color: #BA0C2F; /* Primærfarge for "norges-øl"*/
-  --beersecondary-color: #17183B; /* Sekundærfarge for "norges øl"*/
+  --main-color: #05A8AA;
+  /* Hovedfarge som kan brukes på flere elementer */
+  --bckgray-color: #E7E7E7;
+  /* Grå bakgrunnsfarge */
+  --footer-color: #28262C;
+  /* Farge for bunntekst */
+  --beer-color: #BA0C2F;
+  /* Primærfarge for "norges-øl"*/
+  --beersecondary-color: #17183B;
+  /* Sekundærfarge for "norges øl"*/
 }
 
 * {
-  margin: 0; /* Fjerner standard marger for alle elementer */
-  padding: 0; /* Fjerner standard innrykk */
-  box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde/høyde */
+  margin: 0;
+  /* Fjerner standard marger for alle elementer */
+  padding: 0;
+  /* Fjerner standard innrykk */
+  box-sizing: border-box;
+  /* Inkluderer padding og border i elementets totale bredde/høyde */
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif; /* Setter standard skrifttype til Arial om dette er tilgjengelig*/
-  scroll-behavior: smooth; /* Gjør scrolling på siden jevn når vi bruker navigasjonsknapper */
-  font-size: 12pt; /* Standard skriftstørrelse */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Setter standard skrifttype til Arial om dette er tilgjengelig*/
+  scroll-behavior: smooth;
+  /* Gjør scrolling på siden jevn når vi bruker navigasjonsknapper */
+  font-size: 12pt;
+  /* Standard skriftstørrelse */
 }
 
 body {
-  height: 100%; /* Setter kroppens høyde til å dekke hele vinduet */
-  margin: auto; /* Midtstiller kroppen i forhold til vinduet */
+  height: 100%;
+  /* Setter kroppens høyde til å dekke hele vinduet */
+  margin: auto;
+  /* Midtstiller kroppen i forhold til vinduet */
 }
 
 /* 2. Størrelser på overskrifter */
 #oslomet-body h1 {
-  font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
+  font-size: 4rem;
+  /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h2 {
-  font-size: 2rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
+  font-size: 2rem;
+  /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h3 {
-  font-size: 1.5rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
+  font-size: 1.5rem;
+  /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #oslomet-body h4 {
-  font-size: 1.2rem; /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
+  font-size: 1.2rem;
+  /* Setter font-size for alle h elementer i bodyen til oslomet siden og alle sidene som bruker samme Id */
 }
 
 #beer-body h1 {
-  font-size: 7rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
-  text-align: center; /* Sentrerer t */
+  font-size: 7rem;
+  /* Setter font-size for alle h elementer i bodyen til norges øl siden */
+  text-align: center;
+  /* Sentrerer t */
 }
 
 #beer-body h2 {
-  font-size: 5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
+  font-size: 5rem;
+  /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
 #beer-body h3 {
-  font-size: 4rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
+  font-size: 4rem;
+  /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
 #beer-body h4 {
-  font-size: 1.5rem; /* Setter font-size for alle h elementer i bodyen til norges øl siden */
+  font-size: 1.5rem;
+  /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
-#oslomet-body h1+p { /* Gjør at første p-element etter H1 til å ha et spesifikk stil og størrelse*/
+#oslomet-body h1+p {
+  /* Gjør at første p-element etter H1 til å ha et spesifikk stil og størrelse*/
   font-weight: normal;
   padding-bottom: 1rem;
   font-size: 2rem;
@@ -109,82 +133,118 @@ body {
 /* 3. Default styling for alle a elementer */
 
 a {
-  color: black; /* Setter tekstfargen på alle linker til svart */
-  text-decoration: underline; /* Legger til en strek under alle linker slik at disse er mer synlige */
-  text-decoration-color: var(--main-color); /* Setter fargen på linjene til hovedfargen vår */
-  font-weight: normal; /* Setter teksttykkelsen til normal kontra fet */
+  color: black;
+  /* Setter tekstfargen på alle linker til svart */
+  text-decoration: underline;
+  /* Legger til en strek under alle linker slik at disse er mer synlige */
+  text-decoration-color: var(--main-color);
+  /* Setter fargen på linjene til hovedfargen vår */
+  font-weight: normal;
+  /* Setter teksttykkelsen til normal kontra fet */
 
 }
 
-a:hover { /* Endrer på elementene til linktekst når man har musepekeren over */
-  font-weight: normal; /* Gjør at linkenen beholder vanlig tykkelse */
-  text-decoration-color: black; /* Gjør at linjen under blir svart */
+a:hover {
+  /* Endrer på elementene til linktekst når man har musepekeren over */
+  font-weight: normal;
+  /* Gjør at linkenen beholder vanlig tykkelse */
+  text-decoration-color: black;
+  /* Gjør at linjen under blir svart */
 
 }
 
 /* 4. Header */
-  /* 4.1 Header for oslomet siden */
+/* 4.1 Header for oslomet siden */
 #index-header {
-  height: 7rem; /* Høyden på header */
-  background-color: var(--main-color); /* Bakgrunnsfarge på header */
-  display: flex; /* Bruker flex-box for å plassere logo og listen horisontalt */
-  width: 100%; /* Setter bredden til headeren 100% av skjermen */
-  position: fixed; /* Sørger for at headeren alltid er synlig på toppen av siden */
-  z-index: 10; /* Sørger for at headeren er foran alt annet innhold */
+  height: 7rem;
+  /* Høyden på header */
+  background-color: var(--main-color);
+  /* Bakgrunnsfarge på header */
+  display: flex;
+  /* Bruker flex-box for å plassere logo og listen horisontalt */
+  width: 100%;
+  /* Setter bredden til headeren 100% av skjermen */
+  position: fixed;
+  /* Sørger for at headeren alltid er synlig på toppen av siden */
+  z-index: 10;
+  /* Sørger for at headeren er foran alt annet innhold */
 }
 
 #index-nav {
-  display: flex; /* Bruker flex-box til å plassere elementene horisontalt */
-  justify-content: space-between; /* Plasserer elementene med lik avstand mellom dem */
-  align-items: center; /* Justerer elementene vertikalt i midten av containeren */
-  padding: 10px 20px; /* Legger til padding (10px topp/bunn, 20px venstre/høyre) */
-  width: 100%; /* Setter bredden til hele containerens bredde, slik at navigasjonene ligger helt til høyre og logoen til venstre */
-  margin-left: 10%; /* Flytter containeren 10% fra venstre kant */
+  display: flex;
+  /* Bruker flex-box til å plassere elementene horisontalt */
+  justify-content: space-between;
+  /* Plasserer elementene med lik avstand mellom dem */
+  align-items: center;
+  /* Justerer elementene vertikalt i midten av containeren */
+  padding: 10px 20px;
+  /* Legger til padding (10px topp/bunn, 20px venstre/høyre) */
+  width: 100%;
+  /* Setter bredden til hele containerens bredde, slik at navigasjonene ligger helt til høyre og logoen til venstre */
+  margin-left: 10%;
+  /* Flytter containeren 10% fra venstre kant */
 }
 
 #logo img {
-  height: 4rem; /* Setter høyden på logoen */
+  height: 4rem;
+  /* Setter høyden på logoen */
 }
 
 /* 4.2 Header for git siden */
 #git-header {
-  height: 7rem; /* Høyden på header */
-  background-color: var(--main-color); /* Bakgrunnsfarge på header */
-  display: flex; /* Bruker flex-box for å plassere logo og listen horisontalt */
-  width: 100%; /* Setter bredden til headeren 100% av skjermen */
-  position: absolute; /* Sørger for at headeren alltid er synlig på toppen av siden */
-  z-index: 10; /* Sørger for at headeren er foran alt annet innhold */
+  height: 7rem;
+  /* Høyden på header */
+  background-color: var(--main-color);
+  /* Bakgrunnsfarge på header */
+  display: flex;
+  /* Bruker flex-box for å plassere logo og listen horisontalt */
+  width: 100%;
+  /* Setter bredden til headeren 100% av skjermen */
+  position: absolute;
+  /* Sørger for at headeren alltid er synlig på toppen av siden */
+  z-index: 10;
+  /* Sørger for at headeren er foran alt annet innhold */
 }
 
 /* 4.3 Styling for listen inne i headeren */
 #menu {
-  display: flex; /* Bruker flex-box til å plassere listen horisontalt */
-  list-style: none; /* Fjerner punktene foran liste elementene */
+  display: flex;
+  /* Bruker flex-box til å plassere listen horisontalt */
+  list-style: none;
+  /* Fjerner punktene foran liste elementene */
 }
 
 #menu li {
-  margin-left: 3rem; /* Gir listen elementene et mellomrom */
+  margin-left: 3rem;
+  /* Gir listen elementene et mellomrom */
 }
 
 #menu a {
-  font-size: 1.5rem; /* Setter tekststørrelsen til link elementene  */
-  text-decoration: none; /* Fjerner standardoppsett for link elementer */
-  
+  font-size: 1.5rem;
+  /* Setter tekststørrelsen til link elementene  */
+  text-decoration: none;
+  /* Fjerner standardoppsett for link elementer */
+
 }
 
 #menu a:hover {
-  color: white; /* Gjør at teksten blir hvit når man har musekepkeren over elementene */
+  color: white;
+  /* Gjør at teksten blir hvit når man har musekepkeren over elementene */
 }
 
 /* 4.4 Hamburger meny */
 .menu-toggle {
-  display: none; /* Skjuler checkbox elementet fra å synes */
+  display: none;
+  /* Skjuler checkbox elementet fra å synes */
 }
 
 .hamburger {
-  display: none; /* Skjuler hamburger-menyikonet på desktop */
-  font-size: 2rem; /* Setter størrelsen på ikonet til 2rem */
-  cursor: pointer; /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
+  display: none;
+  /* Skjuler hamburger-menyikonet på desktop */
+  font-size: 2rem;
+  /* Setter størrelsen på ikonet til 2rem */
+  cursor: pointer;
+  /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
 }
 
 /* 4.5 Header for norges øl siden */
@@ -229,52 +289,72 @@ a:hover { /* Endrer på elementene til linktekst når man har musepekeren over *
 
 
 /* 5. Body */
-  /* 5.1. Index */
-    /* 5.1.1. Generell info */
+/* 5.1. Index */
+/* 5.1.1. Generell info */
 #oslomet-body main {
-  display: flex; 
-  justify-content: center; /* Midtstiller innholdet horisontalt */
-  align-items: center; /* Midtstiller innholdet vertikalt */
-  padding-bottom: 8rem; /* Legger til mellomrom på bunnen av main-elementet*/
+  display: flex;
+  justify-content: center;
+  /* Midtstiller innholdet horisontalt */
+  align-items: center;
+  /* Midtstiller innholdet vertikalt */
+  padding-bottom: 8rem;
+  /* Legger til mellomrom på bunnen av main-elementet*/
 }
 
 #grid-container-general-info {
-  display: grid; /* Bruker en grid display */
-  grid-template-areas: /* Definerer oppsettet for grid-områdene */
+  display: grid;
+  /* Bruker en grid display */
+  grid-template-areas:
+    /* Definerer oppsettet for grid-områdene */
     'header header'
     'left right';
-  gap: 10px; /* Gir mellomrom mellom grid-elementene */
-  padding: 10px; /* Legger til innvendig marger rundt grid-containeren */
-  width: 80%; /* Angir at containeren skal bruke 80% av bredden  */
-  max-width: 1200px; /* Angir maksimal bredde for containeren */
-  padding: 20px; /* Marger i alle retningene rundt elementet */
-  box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde/høyde */
+  gap: 10px;
+  /* Gir mellomrom mellom grid-elementene */
+  padding: 10px;
+  /* Legger til innvendig marger rundt grid-containeren */
+  width: 80%;
+  /* Angir at containeren skal bruke 80% av bredden  */
+  max-width: 1200px;
+  /* Angir maksimal bredde for containeren */
+  padding: 20px;
+  /* Marger i alle retningene rundt elementet */
+  box-sizing: border-box;
+  /* Inkluderer padding og border i elementets totale bredde/høyde */
 }
 
 #title {
-  grid-area: header; /* Definerer området for dette elementet som "header" i grid-layouten */
+  grid-area: header;
+  /* Definerer området for dette elementet som "header" i grid-layouten */
 }
 
-#left-side-general-info{
-  grid-area: left; /* Definerer området for dette elementet som "left" i grid-layouten */
+#left-side-general-info {
+  grid-area: left;
+  /* Definerer området for dette elementet som "left" i grid-layouten */
 }
 
 .aside {
-  grid-area: right; /* Definerer området for dette elementet som "right" i grid-layouten */
-  padding-left: 5rem; /* Legger til mellomrom på venstre side */
+  grid-area: right;
+  /* Definerer området for dette elementet som "right" i grid-layouten */
+  padding-left: 5rem;
+  /* Legger til mellomrom på venstre side */
 }
 
 #main-box {
-display: grid; /* Bruker CSS Grid Layout */
-grid-template-columns: 1fr 1fr; /* To kolonner med like bredde */
-gap: 20px; /* Avstand mellom grid-elementer */
-max-width: 600px; /* Maksimal bredde for grid-container */
+  display: grid;
+  /* Bruker CSS Grid Layout */
+  grid-template-columns: 1fr 1fr;
+  /* To kolonner med like bredde */
+  gap: 20px;
+  /* Avstand mellom grid-elementer */
+  max-width: 600px;
+  /* Maksimal bredde for grid-container */
 }
 
 #main-box section p:first-of-type {
-  border-top: solid black; /*Legger til en heltrukket svart linje */
+  border-top: solid black;
+  /*Legger til en heltrukket svart linje */
   padding-top: 1rem;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .image {
@@ -287,7 +367,8 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   margin: 0;
 }
 
-.aside p { /* Endrer p-elementene i classen aside */
+.aside p {
+  /* Endrer p-elementene i classen aside */
   font-size: 1.5rem;
 }
 
@@ -312,12 +393,17 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 /* 5.1.2 Flex-box med bilde og tekstboks ved siden av hverandre */
 .text-box {
-  margin: auto; 
-  width: 100%; /* Gjør elementet like bredt som det tilgjengelige området */
-  padding: 1rem; /* Gir plass rundt innholdet */
-  padding-top: 3rem; /* 3rem ekstra plass øverst */
-  padding-bottom: 3rem; /* 3 rem ekstra plass nederst */
-  margin-left: 3rem; /* Flytter elementet 3rem til høyre */
+  margin: auto;
+  width: 100%;
+  /* Gjør elementet like bredt som det tilgjengelige området */
+  padding: 1rem;
+  /* Gir plass rundt innholdet */
+  padding-top: 3rem;
+  /* 3rem ekstra plass øverst */
+  padding-bottom: 3rem;
+  /* 3 rem ekstra plass nederst */
+  margin-left: 3rem;
+  /* Flytter elementet 3rem til høyre */
 }
 
 #work,
@@ -327,9 +413,12 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 }
 
 
-#work, #student-stories {
-  background-color: #28262C; /*Bakgrunnsfargen inni work endres */
-  color: white; /* Tekstfargen endres til hvit */
+#work,
+#student-stories {
+  background-color: #28262C;
+  /*Bakgrunnsfargen inni work endres */
+  color: white;
+  /* Tekstfargen endres til hvit */
 }
 
 #learn {
@@ -376,7 +465,9 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 }
 
 /* Bilder i work, learn og student-stories */
-#work img, #learn img, #student-stories img {
+#work img,
+#learn img,
+#student-stories img {
   width: 50%;
   height: auto;
   display: block;
@@ -384,7 +475,10 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   max-height: 100%;
 }
 
-.image, #work img, #learn img, #student-stories img {
+.image,
+#work img,
+#learn img,
+#student-stories img {
   max-width: 100%;
   height: auto;
 }
@@ -392,7 +486,9 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 /* 5.1.3 styling av requirements, teaching og tuition */
 #info-grid {
   display: grid;
+  /* Elementene vises i et grid oppsett */
   grid-template-columns: 1fr 1fr 1fr;
+  /* Grid elementet har tre kolonner */
   padding: 5rem;
 }
 
@@ -402,18 +498,22 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 #info-grid p {
   padding-top: 1rem;
-} 
+}
 
-#requirements, #teaching {
+#requirements,
+#teaching {
   margin: 1rem;
   border-right: solid black;
 }
 
-#requirements p, #teaching p, #tuition p {
+#requirements p,
+#teaching p,
+#tuition p {
   padding-bottom: 1rem;
 }
 
-#requirements li, #teaching li {
+#requirements li,
+#teaching li {
   padding-left: 1rem;
 }
 
@@ -495,6 +595,7 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 #academic-path td:not(:last-of-type) {
   border-right: dashed var(--main-color);
+  /* Lager en linje som er stiplet */
 }
 
 /* 5.1.5 Styling for additional info */
@@ -507,7 +608,7 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   margin-bottom: 1rem;
 }
 
-#subject-leader a > div {
+#subject-leader a>div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 50%;
@@ -583,6 +684,7 @@ max-width: 600px; /* Maksimal bredde for grid-container */
   text-decoration: none;
   margin-left: 5rem;
   transition: background-color 0.3s ease;
+  /* Gir fargeendringen når man hovrer over knappen en lettere transition */
 }
 
 #news-letter-button:hover {
@@ -591,7 +693,7 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 }
 
 /* 5.2 Norges øl */
-   /* 5.2.1 Introduksjon av norges øl */
+/* 5.2.1 Introduksjon av norges øl */
 #introduction {
   padding: 4rem;
   width: 80%;
@@ -627,7 +729,8 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 /* 5.2.3.2 Grid om øl */
 
-.beer-left, #beer-right {
+.beer-left,
+#beer-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -697,15 +800,15 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 
 /* 6. accessibility*/
 #accessibility-main {
- padding-top: 10rem;
- margin-left: 25%;
- margin-right: 25%;
+  padding-top: 10rem;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #accessibility-main p {
   font-size: 1.2rem;
   padding: 1rem;
-} 
+}
 
 #accessibility-main h2 {
   padding-top: 4rem;
@@ -714,10 +817,13 @@ max-width: 600px; /* Maksimal bredde for grid-container */
 /* 7. Footer */
 
 footer {
-  background-color: var(--footer-color); /* Bakgrunnsfarge på footer */
-  display: flex; 
-  height: 20rem; /* Høyden på footer */
-  width: 100%; /* Bredden på footer */
+  background-color: var(--footer-color);
+  /* Bakgrunnsfarge på footer */
+  display: flex;
+  height: 20rem;
+  /* Høyden på footer */
+  width: 100%;
+  /* Bredden på footer */
   justify-content: center;
 }
 
@@ -726,7 +832,7 @@ footer a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  
+
 }
 
 footer a:hover {
@@ -734,8 +840,8 @@ footer a:hover {
 }
 
 #left-side-footer {
-  margin-top: 4rem; 
-  margin-right: 10rem; 
+  margin-top: 4rem;
+  margin-right: 10rem;
   color: white;
 }
 
@@ -750,7 +856,7 @@ footer a:hover {
   margin-top: 4rem;
   color: white;
   width: 30%;
-  
+
 }
 
 
@@ -776,7 +882,8 @@ footer a:hover {
 }
 
 /* 8. Navigation for norges øl og index */
-#navigation, #beer-navigation {
+#navigation,
+#beer-navigation {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -795,7 +902,7 @@ footer a:hover {
 
 #beer-navigation .navigation-button {
   border-radius: 10px;
-  
+
 }
 
 .navigation-button p {
@@ -809,34 +916,50 @@ footer a:hover {
 }
 
 .navigation-button a {
-  display: block;/* Gjør lenken til en blokk  */
-  padding: 1rem 2rem;/* Legger til padding */
-  background-color: black;/* Setter bakgrunnsfarge på lenken til svart */
-  color: white;/* Setter tekstfargen til hvit */
-  text-align: center;/* Teksten blsentrert */
-  text-decoration: none;/* Fjerner understrekningen*/
-  font-size: 16px;/*skriftstørrelse */
-  transition: background-color 0.3s ease; /* Legger til en overgangseffekt for bakgrunnsfargen når den endres */
+  display: block;
+  /* Gjør lenken til en blokk  */
+  padding: 1rem 2rem;
+  /* Legger til padding */
+  background-color: black;
+  /* Setter bakgrunnsfarge på lenken til svart */
+  color: white;
+  /* Setter tekstfargen til hvit */
+  text-align: center;
+  /* Teksten blir sentrert */
+  text-decoration: none;
+  /* Fjerner understrekningen*/
+  font-size: 16px;
+  /*skriftstørrelse */
+  transition: background-color 0.3s ease;
+  /* Legger til en overgangseffekt for bakgrunnsfargen når den endres */
 }
 
 
 .navigation-button a:hover {
-  background-color: white; /* Når en holder musepeker over knappen, så blir den hvit*/
-  color: black; /* Tekstfargen blir hvit når musepeker er over knappen*/
+  background-color: white;
+  /* Når en holder musepeker over knappen, så blir den hvit*/
+  color: black;
+  /* Tekstfargen blir svart når musepeker er over knappen*/
 }
 
 #navigation h2,
 #beer-navigation h4 {
-  margin-bottom: 1rem; /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni beer-navigation*/
+  margin-bottom: 1rem;
+  /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni beer-navigation*/
 }
 
 /* 9. Scroll til toppen knapp */
-#beer-scroll, #scroll {
-  position: fixed; /* Sørger for at knappen alltid vises på skjermen */
-  bottom: 10px; /* Plasserer knappen 10px fra bunnen av skjermen */
-  right: 10px; /* Plasserer knappen 10px fra høyre kant av skjermen */
+#beer-scroll,
+#scroll {
+  position: fixed;
+  /* Sørger for at knappen alltid vises på skjermen */
+  bottom: 10px;
+  /* Plasserer knappen 10px fra bunnen av skjermen */
+  right: 10px;
+  /* Plasserer knappen 10px fra høyre kant av skjermen */
   padding: 1rem;
-  border-radius: 4rem; /* Gjør knappen rundet av på hjørnene */
+  border-radius: 4rem;
+  /* Gjør knappen rundet av på hjørnene */
   text-decoration: none;
 }
 
@@ -847,7 +970,8 @@ footer a:hover {
 
 #scroll {
   background-color: var(--main-color);
-} 
+}
+
 /* 10. Mobil*/
 
 @media (max-width: 800px) {
@@ -867,27 +991,30 @@ footer a:hover {
     font-size: 2rem;
   }
 
-  #oslomet-body p, #oslomet-body a, #oslomet-body li, #oslomet-body th {
+  #oslomet-body p,
+  #oslomet-body a,
+  #oslomet-body li,
+  #oslomet-body th {
     font-size: 1.5rem;
   }
 
   #index-header {
-    height: auto; 
+    height: auto;
     position: fixed;
     width: 100%;
     z-index: 10;
   }
 
-  
+
   .hamburger {
-    display: block; /* Show hamburger button */
+    display: block; /* Viser knappen for hamburgermenyen */
   }
 
   #menu {
-    display: none; /* Hide menu by default */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Below header */
+    top: 100%;
     right: 0;
     background-color: var(--main-color);
     width: 100%;
@@ -895,8 +1022,7 @@ footer a:hover {
     text-align: center;
   }
 
-  /* Show menu when checkbox is checked */
-  .menu-toggle:checked + .hamburger + #menu {
+  .menu-toggle:checked+.hamburger+#menu {
     display: flex;
   }
 
@@ -905,10 +1031,10 @@ footer a:hover {
   }
 
   #menu a {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
-  #menu a:hover{
+  #menu a:hover {
     text-decoration: none;
   }
 
@@ -916,73 +1042,76 @@ footer a:hover {
     height: 3rem;
   }
 
- 
-  
+
+
   #grid-container-general-info {
     grid-template-areas:
       'header'
       'left'
       'right';
   }
-  
+
   #main-box {
     font-size: 2rem;
   }
-  
+
   .aside {
     padding-left: 0;
     padding-top: 3em;
   }
 
-#navigation {
-  place-items: center;
-}
+  #navigation {
+    place-items: center;
+  }
 
-.navigation-button {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0;
-  width: 50%;
-}
+  .navigation-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 50%;
+  }
 
-.navigation-button a {
-  margin-top: 1rem;
-}
+  .navigation-button a {
+    margin-top: 1rem;
+  }
 
 
   .text-box {
     width: 80%;
   }
 
-.semester {
-  grid-template-columns: 1fr 1fr;
-}
+  .semester {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  
+
   #student-stories {
-  flex-direction: column;
-  align-items: center;
-}
+    flex-direction: column;
+    align-items: center;
+  }
 
-#Work{
+  #work {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  
-}
+  #learn {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-#learn {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
-#work img, #learn img, #student-stories img {
-  width: 100%;
+  #work img,
+  #learn img,
+  #student-stories img {
+    width: 100%;
   }
 
   #info-grid {
     grid-template-columns: 1fr;
   }
 
-  #teaching, #requirements {
+  #teaching,
+  #requirements {
     border-right: none;
     border-bottom: solid black;
   }
@@ -1009,52 +1138,55 @@ footer a:hover {
 
   #news-letter {
     flex-direction: column;
-    
+
   }
 
   #news-letter-button {
     margin: 0;
   }
-  .beer-left, #beer-right {
+
+  .beer-left,
+  #beer-right {
     display: flex;
     margin-left: 0%;
   }
 
-.beer-left {
-  flex-direction: column-reverse;
-}
+  .beer-left {
+    flex-direction: column-reverse;
+  }
 
-#beer-right {
-  flex-direction: column;
-}
+  #beer-right {
+    flex-direction: column;
+  }
 
-.beer-img {
-  /* Hentet fra inspect element i chrome */
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  /* Hentet fra inspect element i chrome */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .beer-img {
+    /* Hentet fra inspect element i chrome */
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    /* Hentet fra inspect element i chrome */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
-#beer-body p, #beer-body a {
-font-size: 2rem;
-}
+  #beer-body p,
+  #beer-body a {
+    font-size: 2rem;
+  }
 
-#beer-body h4 {
-  font-size: 3rem;
-}
+  #beer-body h4 {
+    font-size: 3rem;
+  }
 
-#beer-navigation {
-  justify-content: center;
-  align-items: center;
-}
+  #beer-navigation {
+    justify-content: center;
+    align-items: center;
+  }
 
-#beer-navigation h4 {
-  font-size: 2.5rem;
-}
+  #beer-navigation h4 {
+    font-size: 2.5rem;
+  }
 
   footer {
     flex-direction: column;
@@ -1062,6 +1194,7 @@ font-size: 2rem;
     place-items: left;
     padding-left: 2rem;
   }
+
   footer p {
     font-size: 2rem;
     padding-bottom: 2em;
@@ -1081,19 +1214,23 @@ font-size: 2rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.2rem;
   }
-  #left-side-footer, #mid-footer, #right-side-footer {
+
+  #left-side-footer,
+  #mid-footer,
+  #right-side-footer {
     margin-right: 0;
     margin-left: 0;
     width: 100%;
   }
-  
-#right-side-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 3rem;
-}
 
-  #scroll, #beer-scroll {
+  #right-side-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3rem;
+  }
+
+  #scroll,
+  #beer-scroll {
     display: none;
   }
 }
@@ -1102,4 +1239,4 @@ font-size: 2rem;
   html {
     font-size: 0.75rem;
   }
-
+}
