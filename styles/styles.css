@@ -401,11 +401,12 @@ a:hover {
 
 
 .half-text-half-image {
-  display: flex;  
+  display: flex;
 }
 
 #work,
-#student-stories,#git-right {
+#student-stories,
+#git-right {
   background-color: #28262C;
   /*Bakgrunnsfargen inni work endres */
   color: white;
@@ -417,16 +418,19 @@ a:hover {
   margin-top: 3rem;
 }
 
-#learn,#git-left{
+#learn,
+#git-left {
   background-color: var(--bckgray-color);
-  
+
 }
 
-#git-left, #git-right {
+#git-left,
+#git-right {
   font-size: 1.5rem;
 }
 
-#git-left h2, #git-right h2 {
+#git-left h2,
+#git-right h2 {
   margin-bottom: 1rem;
 }
 
@@ -793,15 +797,18 @@ a:hover {
   margin-left: 15rem;
   margin-right: 15rem;
 }
-#accessibility > img,  {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+
+.git-accessibility-images
+{
+width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
 }
+
 #accessibility-main p {
   font-size: 1.2rem;
- 
+
 }
 
 #accessibility-main h2 {
@@ -818,16 +825,16 @@ a:hover {
   border-width: 0.3rem;
   place-items: center;
   border-bottom: solid var(--footer-color);
-  
+
 }
 
 .figur1 {
-margin: 1rem;
+  margin: 1rem;
 }
 
 .figur2 {
-justify-content: right;
-align-items: right;
+  justify-content: right;
+  align-items: right;
 }
 
 /* 7. Footer */
@@ -991,6 +998,7 @@ footer a:hover {
 /* 10. Mobil*/
 
 @media (max-width: 800px) {
+
   /* 10.1 Default styling for alle elementer */
   html {
     font-size: 0.5rem;
@@ -1026,7 +1034,8 @@ footer a:hover {
 
 
   .hamburger {
-    display: block; /* Viser knappen for hamburgermenyen */
+    display: block;
+    /* Viser knappen for hamburgermenyen */
   }
 
   #menu {
@@ -1062,9 +1071,9 @@ footer a:hover {
   }
 
 
-/* 10.4 Body */
-/* 10.4.1 Index */
-/* 10.4.1.1 Generell info */
+  /* 10.4 Body */
+  /* 10.4.1 Index */
+  /* 10.4.1.1 Generell info */
   #grid-container-general-info {
     grid-template-areas:
       'header'
@@ -1081,14 +1090,14 @@ footer a:hover {
     padding-top: 3em;
   }
 
- 
 
 
-  .text-box{
+
+  .text-box {
     width: 80%;
   }
 
-  
+
   .semester {
     grid-template-columns: 1fr 1fr;
   }
@@ -1113,10 +1122,10 @@ footer a:hover {
     padding-top: 6rem;
     flex-direction: column;
     align-items: center;
-    
+
   }
 
-  #git-right{
+  #git-right {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -1163,7 +1172,8 @@ footer a:hover {
   #news-letter-button {
     margin: 0;
   }
-/* 10.4.2 Norges øl */
+
+  /* 10.4.2 Norges øl */
   .beer-left,
   .beer-right {
     display: flex;
@@ -1219,7 +1229,7 @@ footer a:hover {
     align-items: center;
   }
 
-  
+
 
   /* 10.5 Footer */
   footer {
@@ -1246,7 +1256,7 @@ footer a:hover {
     font-size: 1.5rem;
     min-width: 24px;
     min-height: 24px;
-    
+
   }
 
   #left-side-footer,
@@ -1304,6 +1314,7 @@ footer a:hover {
   #academic-path th {
     font-size: 1.3rem;
   }
+
   #academic-path p {
     font-size: 1.3rem;
   }
@@ -1319,10 +1330,10 @@ footer a:hover {
   .navigation-button a {
     font-size: 1rem;
   }
-  
+
   .social-media img {
     min-width: 2rem;
   }
-  
-  
+
+
 }
