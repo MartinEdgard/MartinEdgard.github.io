@@ -102,30 +102,25 @@ body {
 }
 
 #beer-body h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   /* Setter font-size for alle h elementer i bodyen til norges øl siden */
   text-align: center;
   /* Sentrerer t */
 }
 
 #beer-body h2 {
-  font-size: 5rem;
-  /* Setter font-size for alle h elementer i bodyen til norges øl siden */
-}
-
-#beer-body h3 {
   font-size: 4rem;
   /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
-#beer-body h4 {
-  font-size: 1.5rem;
+#beer-body h3 {
+  font-size: 3rem;
   /* Setter font-size for alle h elementer i bodyen til norges øl siden */
 }
 
+
 #oslomet-body h1+p {
-  /* Gjør at første p-element etter H1 til å ha et spesifikk stil og størrelse*/
-  font-weight: normal;
+  /* Gjør at første p-element etter H1 til å ha et spesifikk størrelse*/
   padding-bottom: 1rem;
   font-size: 2rem;
 }
@@ -295,8 +290,6 @@ a:hover {
   display: flex;
   justify-content: center;
   /* Midtstiller innholdet horisontalt */
-  align-items: center;
-  /* Midtstiller innholdet vertikalt */
   padding-bottom: 8rem;
   /* Legger til mellomrom på bunnen av main-elementet*/
 }
@@ -406,29 +399,35 @@ a:hover {
   /* Flytter elementet 3rem til høyre */
 }
 
-#work,
-#learn,
-#student-stories {
-  display: flex;
+
+.half-text-half-image {
+  display: flex;  
 }
 
-
 #work,
-#student-stories {
+#student-stories,#git-right {
   background-color: #28262C;
   /*Bakgrunnsfargen inni work endres */
   color: white;
   /* Tekstfargen endres til hvit */
 }
 
-#learn {
-  background-color: var(--bckgray-color);
+#work p:last-child,
+#student-stories p:last-child {
+  margin-top: 3rem;
 }
 
-#work h2,
-#learn h2,
-#student-stories h2 {
-  margin-bottom: 2rem;
+#learn,#git-left{
+  background-color: var(--bckgray-color);
+  
+}
+
+#git-left, #git-right {
+  font-size: 1.5rem;
+}
+
+#git-left h2, #git-right h2 {
+  margin-bottom: 1rem;
 }
 
 #student-stories h3 {
@@ -444,17 +443,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#work p,
-#learn p,
-#student-stories p {
-  padding-bottom: 1rem;
-}
-
-#work p:last-child,
-#student-stories p:last-child {
-  margin-top: 3rem;
-}
-
 #work a {
   color: white;
   font-size: 1rem;
@@ -465,23 +453,15 @@ a:hover {
 }
 
 /* Bilder i work, learn og student-stories */
-#work img,
-#learn img,
-#student-stories img {
+.half-text-half-image img {
   width: 50%;
   height: auto;
   display: block;
   object-fit: cover;
   max-height: 100%;
+  min-width: 50%;
 }
 
-.image,
-#work img,
-#learn img,
-#student-stories img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* 5.1.3 styling av requirements, teaching og tuition */
 #info-grid {
@@ -581,6 +561,10 @@ a:hover {
 
 .semester div:not(:last-of-type) {
   border-right: solid black;
+}
+
+#academic-path table {
+  width: 100%;
 }
 
 #academic-path th {
@@ -730,7 +714,7 @@ a:hover {
 /* 5.2.3.2 Grid om øl */
 
 .beer-left,
-#beer-right {
+.beer-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -745,8 +729,12 @@ a:hover {
   margin-left: 1rem;
 }
 
-#beer-right .beer-info {
+.beer-right .beer-info {
   margin-right: 2rem;
+}
+
+.beer-info p:first-of-type {
+  font-size: 2rem;
 }
 
 /* 5.2.3.3 Bilde av rating og stjerne */
@@ -799,19 +787,47 @@ a:hover {
 
 
 /* 6. accessibility*/
+/* Siden bruker samme body struktur, id="oslomet-body" som index, men har noen egne elementer */
 #accessibility-main {
   padding-top: 10rem;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
-
+#accessibility > img,  {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 #accessibility-main p {
   font-size: 1.2rem;
-  padding: 1rem;
+ 
 }
 
 #accessibility-main h2 {
-  padding-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.textbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-width: 0.3rem;
+  place-items: center;
+  border-bottom: solid var(--footer-color);
+  
+}
+
+.figur1 {
+margin: 1rem;
+}
+
+.figur2 {
+justify-content: right;
+align-items: right;
 }
 
 /* 7. Footer */
@@ -911,7 +927,7 @@ footer a:hover {
 }
 
 #navigatiion h2,
-#beer-navigation h4 {
+#beer-navigation h2 {
   text-align: center;
 }
 
@@ -943,7 +959,7 @@ footer a:hover {
 }
 
 #navigation h2,
-#beer-navigation h4 {
+#beer-navigation h2 {
   margin-bottom: 1rem;
   /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni beer-navigation*/
 }
@@ -975,10 +991,12 @@ footer a:hover {
 /* 10. Mobil*/
 
 @media (max-width: 800px) {
+  /* 10.1 Default styling for alle elementer */
   html {
     font-size: 0.5rem;
   }
 
+  /* 10.2 Størrelser på tekst */
   #oslomet-body h1 {
     font-size: 3rem;
   }
@@ -998,6 +1016,7 @@ footer a:hover {
     font-size: 1.5rem;
   }
 
+  /* 10.3 Header */
   #index-header {
     height: auto;
     position: fixed;
@@ -1043,7 +1062,9 @@ footer a:hover {
   }
 
 
-
+/* 10.4 Body */
+/* 10.4.1 Index */
+/* 10.4.1.1 Generell info */
   #grid-container-general-info {
     grid-template-areas:
       'header'
@@ -1060,26 +1081,14 @@ footer a:hover {
     padding-top: 3em;
   }
 
-  #navigation {
-    place-items: center;
-  }
-
-  .navigation-button {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-    width: 50%;
-  }
-
-  .navigation-button a {
-    margin-top: 1rem;
-  }
+ 
 
 
-  .text-box {
+  .text-box{
     width: 80%;
   }
 
+  
   .semester {
     grid-template-columns: 1fr 1fr;
   }
@@ -1100,9 +1109,19 @@ footer a:hover {
     align-items: center;
   }
 
-  #work img,
-  #learn img,
-  #student-stories img {
+  #git-left {
+    padding-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  #git-right{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .half-text-half-image img {
     width: 100%;
   }
 
@@ -1116,7 +1135,7 @@ footer a:hover {
     border-bottom: solid black;
   }
 
-  #lederinfo {
+  #leader-info {
     padding-left: 1.5em;
   }
 
@@ -1132,7 +1151,7 @@ footer a:hover {
     border-top: solid black;
   }
 
-  #infomelding {
+  #info-message {
     padding-bottom: 2rem;
   }
 
@@ -1144,9 +1163,9 @@ footer a:hover {
   #news-letter-button {
     margin: 0;
   }
-
+/* 10.4.2 Norges øl */
   .beer-left,
-  #beer-right {
+  .beer-right {
     display: flex;
     margin-left: 0%;
   }
@@ -1155,28 +1174,44 @@ footer a:hover {
     flex-direction: column-reverse;
   }
 
-  #beer-right {
+  .beer-right {
     flex-direction: column;
   }
 
   .beer-img {
-    /* Hentet fra inspect element i chrome */
     overflow-clip-margin: content-box;
     overflow: clip;
-    /* Hentet fra inspect element i chrome */
+    /* overflow-clip margin og overflow ble brukt når vi ønsket at bildene skulle se store ut, 
+    men vi slet med at bilde var for bredt for siden på mobil skjerm. Når vi sjekket bilde i inspect element,
+    så vi at disse to funskjonene sto på siden. Vi prøvde å bruke de og det funket perfekt. */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  #beer-body h4 {
+    font-size: 3rem;
+  }
 
   #beer-body p,
   #beer-body a {
     font-size: 2rem;
   }
 
-  #beer-body h4 {
-    font-size: 3rem;
+  /* 10.5 Navigation for norges øl og index */
+  #navigation {
+    place-items: center;
+  }
+
+  .navigation-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 50%;
+  }
+
+  .navigation-button a {
+    margin-top: 1rem;
   }
 
   #beer-navigation {
@@ -1184,10 +1219,9 @@ footer a:hover {
     align-items: center;
   }
 
-  #beer-navigation h4 {
-    font-size: 2.5rem;
-  }
+  
 
+  /* 10.5 Footer */
   footer {
     flex-direction: column;
     height: auto;
@@ -1197,7 +1231,6 @@ footer a:hover {
 
   footer p {
     font-size: 2rem;
-    padding-bottom: 2em;
   }
 
   footer a {
@@ -1211,8 +1244,9 @@ footer a:hover {
 
   #mid-footer a {
     font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.2rem;
+    min-width: 24px;
+    min-height: 24px;
+    
   }
 
   #left-side-footer,
@@ -1229,6 +1263,7 @@ footer a:hover {
     padding-bottom: 3rem;
   }
 
+  /* 10.6 Navigation for norges øl og index */
   #scroll,
   #beer-scroll {
     display: none;
@@ -1239,4 +1274,55 @@ footer a:hover {
   html {
     font-size: 0.75rem;
   }
+
+  #news-letter {
+    flex-direction: column;
+  }
+
+  #info-message {
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 3rem;
+  }
+
+  #grid-container-general-info {
+    min-width: 80%
+  }
+
+  #academic-path h3 {
+    font-size: 2rem;
+  }
+
+  #academic-path h4 {
+    font-size: 1.5rem;
+  }
+
+  #academic-path th {
+    font-size: 1.3rem;
+  }
+  #academic-path p {
+    font-size: 1.3rem;
+  }
+
+  #subject-leader img {
+    max-width: 15rem;
+  }
+
+  .beer-img img {
+    min-width: 30rem;
+  }
+
+  .navigation-button a {
+    font-size: 1rem;
+  }
+  
+  .social-media img {
+    min-width: 2rem;
+  }
+  
+  
 }
