@@ -474,6 +474,7 @@ a:hover {
 #requirements,
 #teaching {
   margin: 1rem;
+  padding-right: 1.5rem;
   border-right: solid black;
 }
 
@@ -576,6 +577,7 @@ a:hover {
 }
 
 /* 5.1.5 Styling for additional info */
+
 #questions {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -585,14 +587,16 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-#subject-leader a>div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 50%;
+#subject-leader a  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
   border-top: solid black;
   border-bottom: solid black;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  
 }
 
 #subject-leader h4 {
@@ -600,13 +604,12 @@ a:hover {
 }
 
 #subject-leader a {
-  display: block;
   text-decoration: none;
   margin-top: 2rem;
 }
 
 #subject-leader img {
-  max-width: 100px;
+  width: 100px;
   height: auto;
 }
 
@@ -1114,9 +1117,6 @@ footer a:hover {
     border-bottom: solid black;
   }
 
-  #leader-info {
-    padding-left: 1.5em;
-  }
 
   #other-studies {
     padding: 2rem;
@@ -1298,11 +1298,14 @@ footer a:hover {
 
 /* 11. Scaling for widescreen*/
 @media (min-width: 2000px) {
- 
-
   #grid-container-general-info {
-    min-width: 80%
+    min-width: 50%;
   }
+
+  #oslomet-body h1 {
+    font-size: 2.75rem;
+  }
+
 
   #academic-path h3 {
     font-size: 2rem;
@@ -1321,7 +1324,7 @@ footer a:hover {
   }
 
   #subject-leader img {
-    max-width: 15rem;
+    max-width: 50%;
   }
 
   .beer-img img {
@@ -1335,4 +1338,39 @@ footer a:hover {
   .social-media img {
     min-width: 2rem;
   }
+
+  .text-box p {
+    font-size: 1.5rem;
+  }
+
+  #info-grid {
+    font-size: 1.2rem;
+  }
+
+  #introduction {
+    width: 50%;
+  }
+
+  #beer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .county {
+    width: 100%;
+    outline: hidden;
+  }
+
+  .beer-left,.beer-right {
+    width: 50%;
+  }
+
+  .no-border {
+    border-bottom: none;
+  }
+  
+  
 }
