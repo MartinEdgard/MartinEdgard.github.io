@@ -1,43 +1,49 @@
 /* Table of contents 
 
-1. Default styling for alle elementer
-2. Størrelser på overskrifter
-3. Default styling for alle a elementer
-4. Header
-  4.1 Header for oslomet siden
-  4.2 Header for git siden
-  4.3 Styling for listen inne i headeren
-  4.4 Hamburger meny
-  4.5 Header for norges øl siden
-5. Body
-  5.1. Index
-    5.1.1. Generell info
-    5.1.2 Flex-box med bilde og tekstboks ved siden av hverandre
-    5.1.3 styling av requirements, teaching og tuition
-    5.1.4 Studieløp
-    5.1.5 Styling for additional info
-    5.1.6 Nyhetsbrev
-  5.2 Norges øl
-    5.2.1 Introduksjon av norges øl
-    5.2.2 Overskrift av landsdeler
-    5.2.3 Informasjon om øl
-      5.2.3.1 Generell styling
-      5.2.3.2 Grid om øl
-      5.2.3.3 Bilde av rating og stjerne
-      5.2.3.4 Bryggeri navn
-      5.2.3.5 Navn på øl
-      5.2.3.6 Bilde av øl
-      5.2.3.7 Linker
-6. accessebility
-7. Footer
-8. Navigation for norges øl og index
-9. Scroll til toppen knapp
-10. scaling mobil
-
-
-
-
-
+1. Default styling for alle elementer - Kodelinje 50
+2. Størrelser på overskrifter - Kodelinje 89
+3. Default styling for alle a elementer - Kodelinje 134
+4. Header - Kodelinje 157
+  4.1 Header for oslomet siden - Kodelinje 158
+  4.2 Styling for listen inne i headeren - Kodelinje 196
+  4.3 Hamburger meny - Kodelinje 222
+  4.4 Header for norges øl siden - Kodelinje 237
+5. Body - Kodelinje 278
+  5.1. Index - Kodelinje 279
+    5.1.1. Generell info - Kodelinje 280
+    5.1.2 Flex-box med bilde og tekstboks ved siden av hverandre - Kodelinje 379
+    5.1.3 styling av requirements, teaching og tuition - Kodelinje 454
+    5.1.4 Studieløp - Kodelinje 511
+    5.1.5 Styling for additional info - Kodelinje 578
+    5.1.6 Nyhetsbrev - Kodelinje 645
+  5.2 Norges øl - Kodelinje 672
+    5.2.1 Introduksjon av norges øl - Kodelinje 673
+    5.2.2 Overskrift av landsdeler - Kodelinje 685
+    5.2.3 Informasjon om øl - Kodelinje 693
+      5.2.3.1 Generell styling - Kodelinje 694
+      5.2.3.2 Grid om øl - Kodelinje 707
+      5.2.3.3 Bilde av rating og stjerne - Kodelinje 733
+      5.2.3.4 Bryggeri navn - Kodelinje 743
+      5.2.3.5 Navn på øl - Kodelinje 754
+      5.2.3.6 Bilde av øl - Kodelinje 759
+      5.2.3.7 Linker - Kodelinje 769 
+  5.3 Tilgjenglighet og GitHub - Kodelinje 782
+6. Footer - Kodelinje - Kodelinje 826
+7. Navigation for norges øl og index - Kodelinje 891
+8. Scroll til toppen knapp - Kodelinje 958
+9. Mobil - Kodelinje 982
+  9.1 Default styling for alle elementer - Kodelinje 986
+  9.2 Størrelser på tekst - Kodelinje 991
+  9.3 Header - Kodelinje 1011
+  9.4 Body - Kodelinje 1057
+    9.4.1 Index - Kodelinje 1058
+    9.4.2 Norges øl - Kodelinje 1146
+    9.4.3 Tilgjenglighet og GitHub - Kodelinje 1182
+  9.5 Navigation for norges øl og index - Kodelinje 1211
+  9.6 Footer - Kodelinje 1234
+  9.7 Scroll til toppen knapp - Kodelinje 1276
+10. Scaling mellom pc-skjerm og mobil - Kodelinje 1283
+11. Scaling for widescreen - Kodelinje 1299
 */
 
 
@@ -185,23 +191,9 @@ a:hover {
   /* Setter høyden på logoen */
 }
 
-/* 4.2 Header for git siden */
-#git-header {
-  height: 7rem;
-  /* Høyden på header */
-  background-color: var(--main-color);
-  /* Bakgrunnsfarge på header */
-  display: flex;
-  /* Bruker flex-box for å plassere logo og listen horisontalt */
-  width: 100%;
-  /* Setter bredden til headeren 100% av skjermen */
-  position: absolute;
-  /* Sørger for at headeren alltid er synlig på toppen av siden */
-  z-index: 10;
-  /* Sørger for at headeren er foran alt annet innhold */
-}
 
-/* 4.3 Styling for listen inne i headeren */
+
+/* 4.2 Styling for listen inne i headeren */
 #menu {
   display: flex;
   /* Bruker flex-box til å plassere listen horisontalt */
@@ -227,7 +219,7 @@ a:hover {
   /* Gjør at teksten blir hvit når man har musekepkeren over elementene */
 }
 
-/* 4.4 Hamburger meny */
+/* 4.3 Hamburger meny */
 .menu-toggle {
   display: none;
   /* Skjuler checkbox elementet fra å synes */
@@ -242,7 +234,7 @@ a:hover {
   /* Endrer markøren til en hånd når brukeren holder musen over ikonet hamburgermeny */
 }
 
-/* 4.5 Header for norges øl siden */
+/* 4.4 Header for norges øl siden */
 #beer-header {
   display: flex;
   flex-direction: column;
@@ -399,14 +391,17 @@ a:hover {
   /* Flytter elementet 3rem til høyre */
 }
 
+.text-box h2 {
+  margin-bottom: 1rem;
+  /* Legger til 1rem plass nederst på h2 elementene */
+}
 
 .half-text-half-image {
   display: flex;
 }
 
 #work,
-#student-stories,
-#git-right {
+#student-stories {
   background-color: #28262C;
   /*Bakgrunnsfargen inni work endres */
   color: white;
@@ -418,21 +413,10 @@ a:hover {
   margin-top: 3rem;
 }
 
-#learn,
-#git-left {
+#learn {
   background-color: var(--bckgray-color);
-
 }
 
-#git-left,
-#git-right {
-  font-size: 1.5rem;
-}
-
-#git-left h2,
-#git-right h2 {
-  margin-bottom: 1rem;
-}
 
 #student-stories h3 {
   padding-bottom: 2rem;
@@ -476,13 +460,16 @@ a:hover {
   padding: 5rem;
 }
 
+#info-grid h3 {
+  padding-bottom: 0.7rem;
+}
+
 #info-grid li {
   list-style-position: inside;
 }
 
-#info-grid p {
-  padding-top: 1rem;
-}
+
+
 
 #requirements,
 #teaching {
@@ -518,6 +505,8 @@ a:hover {
 #master-link {
   text-decoration: none;
 }
+
+#master-link
 
 /* 5.1.4 Studieløp */
 #background-academic-path {
@@ -684,7 +673,7 @@ a:hover {
 /* 5.2.1 Introduksjon av norges øl */
 #introduction {
   padding: 4rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -790,25 +779,18 @@ a:hover {
 
 
 
-/* 6. accessibility*/
-/* Siden bruker samme body struktur, id="oslomet-body" som index, men har noen egne elementer */
+/* 5.3 Tilgjenglighet og GitHub */
+/* Sidene bruker id="oslomet-body" i body, men har noen egne elementer*/
 #accessibility-main {
   padding-top: 10rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
-.git-accessibility-images
-{
-width: 100%;
-height: auto;
-display: block;
-margin: 0 auto;
-}
 
 #accessibility-main p {
   font-size: 1.2rem;
-
+  margin-bottom: 1em;
 }
 
 #accessibility-main h2 {
@@ -816,28 +798,32 @@ margin: 0 auto;
   padding-bottom: 0.5rem;
 }
 
-.textbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-width: 0.3rem;
-  place-items: center;
-  border-bottom: solid var(--footer-color);
-
+#accessibility-main h3 {
+  margin-bottom: 1rem;
 }
 
-.figur1 {
-  margin: 1rem;
+#accessibility-main ul {
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
-.figur2 {
-  justify-content: right;
-  align-items: right;
+.accessibility-images img {
+  max-width: 100%;
+  border-radius: 2rem;
 }
 
-/* 7. Footer */
+.github-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.github-images img {
+  border-radius: 2rem;
+  max-width: 50%;
+}
+
+/* 6. Footer */
 
 footer {
   background-color: var(--footer-color);
@@ -882,8 +868,6 @@ footer a:hover {
 
 }
 
-
-
 #mid-footer a {
   display: block;
 }
@@ -904,7 +888,7 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
-/* 8. Navigation for norges øl og index */
+/* 7. Navigation for norges øl og index */
 #navigation,
 #beer-navigation {
   display: flex;
@@ -971,7 +955,7 @@ footer a:hover {
   /* Legger til marger på bunnen av alle h2 inni navigasjon og alle h4 inni beer-navigation*/
 }
 
-/* 9. Scroll til toppen knapp */
+/* 8. Scroll til toppen knapp */
 #beer-scroll,
 #scroll {
   position: fixed;
@@ -995,16 +979,16 @@ footer a:hover {
   background-color: var(--main-color);
 }
 
-/* 10. Mobil*/
+/* 9. Mobil*/
 
 @media (max-width: 800px) {
 
-  /* 10.1 Default styling for alle elementer */
+  /* 9.1 Default styling for alle elementer */
   html {
     font-size: 0.5rem;
   }
 
-  /* 10.2 Størrelser på tekst */
+  /* 9.2 Størrelser på tekst */
   #oslomet-body h1 {
     font-size: 3rem;
   }
@@ -1024,7 +1008,7 @@ footer a:hover {
     font-size: 1.5rem;
   }
 
-  /* 10.3 Header */
+  /* 9.3 Header */
   #index-header {
     height: auto;
     position: fixed;
@@ -1070,10 +1054,9 @@ footer a:hover {
     height: 3rem;
   }
 
-
-  /* 10.4 Body */
-  /* 10.4.1 Index */
-  /* 10.4.1.1 Generell info */
+  /* 9.4 Body */
+  /* 9.4.1 Index */
+  
   #grid-container-general-info {
     grid-template-areas:
       'header'
@@ -1089,8 +1072,6 @@ footer a:hover {
     padding-left: 0;
     padding-top: 3em;
   }
-
-
 
 
   .text-box {
@@ -1118,17 +1099,6 @@ footer a:hover {
     align-items: center;
   }
 
-  #git-left {
-    padding-top: 6rem;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-  #git-right {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
 
   .half-text-half-image img {
     width: 100%;
@@ -1173,7 +1143,7 @@ footer a:hover {
     margin: 0;
   }
 
-  /* 10.4.2 Norges øl */
+  /* 9.4.2 Norges øl */
   .beer-left,
   .beer-right {
     display: flex;
@@ -1208,7 +1178,37 @@ footer a:hover {
     font-size: 2rem;
   }
 
-  /* 10.5 Navigation for norges øl og index */
+
+  /* 9.4.3 Tilgjenglighet og GitHub */
+  #accessibility-main {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100%;
+  }
+
+  #accessibility-main h1 {
+    font-size: 4rem;
+  }
+
+  #accessibility-main h2 {
+    font-size: 3rem;
+  }
+
+  #accessibility-main p {
+    font-size: 2rem;
+  }
+
+  .github-images {
+    flex-direction: column;
+  }
+
+  .github-images img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
+  /* 9.5 Navigation for norges øl og index */
   #navigation {
     place-items: center;
   }
@@ -1231,7 +1231,7 @@ footer a:hover {
 
 
 
-  /* 10.5 Footer */
+  /* 9.6 Footer */
   footer {
     flex-direction: column;
     height: auto;
@@ -1273,12 +1273,14 @@ footer a:hover {
     padding-bottom: 3rem;
   }
 
-  /* 10.6 Navigation for norges øl og index */
+  /* 9.7 Scroll til toppen knapp */
   #scroll,
   #beer-scroll {
     display: none;
   }
 }
+
+/* 10. Scaling mellom pc-skjerm og mobil */
 
 @media (min-width: 801px) and (max-width: 1200px) {
   html {
@@ -1294,6 +1296,7 @@ footer a:hover {
   }
 }
 
+/* 11. Scaling for widescreen*/
 @media (min-width: 2000px) {
   html {
     font-size: 3rem;
@@ -1334,6 +1337,4 @@ footer a:hover {
   .social-media img {
     min-width: 2rem;
   }
-
-
 }

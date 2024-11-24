@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <title>GitHub</title>
-    <link rel="icon" href="../media/oslomet_logo.svg" type="image/x-icon">
+    <link rel="icon" href="../media//oslomet/logo/oslomet_logo.svg" type="image/x-icon">
     <meta name="description" content="Dette er hvordan vi jobbet sammen i GitHub">
 </head>
 
-<header id="git-header">
+<header id="index-header">
     <nav id="index-nav">
         <!--navbar med linker til de andre sidene vi har laget.-->
         <div id="logo">
-            <img src="../media/oslomet_logo.svg" alt="OsloMet">
+            <a href="../index.html">
+                <img src="../media/oslomet/logo/oslomet_logo.svg" alt="OsloMet">
+            </a>
         </div>
         <!-- Hamburger menyen av og på. Inspirasjon hentet fra https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -30,52 +32,61 @@
 
 
 <body id="oslomet-body">
-    <article id="git-left" class="half-text-half-image">
-        <section class="text-box">
-            <h2>Våre tanker om Github</h2>
-            <p>Å bruke github gikk bra uten noen strore problemer. Vi fikk alle testet at det gikk ann å pushe/pulle for
-                alle.
-                Vi brukte litt tid på å bli vant til denne typen arbeidsflyt.</p>
-            <p>Vi ble aldri veldig kjent med github og
-                det tok ikke lang tid før vi fant ut at vi mye heller ville jobbe på prosjektet i liveshare.</p>
-            <p>GitHub viste seg å være svært nyttig da vi støtte på problemer med nettsiden. Ved å bruke GitHub kunne vi
-                enkelt spore endringene vi hadde gjort, noe som førte oss til å finne årsaken til feilen.<p>
-        </section>
-        <img src="../media/gitcommithistory.webp" alt="commit history" loading="lazy" class="git-accessibility-images" >
-    </article>
-    <article id="git-right" class="half-text-half-image">
-        <img src="../media/commithistory.webp" alt="commit history" loading="lazy" class="git-accessibility-images">
-        <section class="text-box">
-            <h2>Våre tanker om liveshare</h2>
-            <p>Vi fant raskt ut at det finnes en extension som heter liveshare.
-                Denne har vi benyttet oss av under hvert eneste gruppemøte.
-                Siden vi har jobbet synkront på skolen opptil flere ganger i uken,
-                har vi ikke måtte pushe/pulle for å dele koden mellom oss.
-                Vi brukte litt tid på å finne ut av at man kunne dele live server slik at alle kunne se nettsiden på sin
-                egen skjerm.
-                Det er noen ulemper ved å bruke live share.
-                En av de er at noen ganger blir du festet til en annen sin musepeker uten en mulighet for å komme ut av
-                det.
-                Noe som irriterte oss veldig er
-                når flere koder samtidig og en person benytter seg av funksjonen Ctrl + Z, fjerner dette andre sitt
-                arbeid i tillegg.</p>
-        </section>
-    </article>
-    <article id="work" class="half-text-half-image">
-        <img src="../media/github-forandring.webp" alt="git forandringer" loading="lazy" class="git-accessibility-images">
-        <img src="../media/git-forandring.webp" alt="git forandringer" loading="lazy" class="git-accessibility-images">
-    </article>
+    <main id="accessibility-main">
+
+        <article>
+            <h1>GitHub</h1>
+            <h2>Våre tanker om GitHub</h2>
+            <p>Å bruke GitHub i dette prosjektet gikk generelt veldig bra, og vi støtte ikke på noen store utfordringer. Alle i gruppa fikk testet og bekreftet at vi både kunne pushe og pulle endringer.  </p>
+            <p>GitHub viste seg å være spesielt nyttig når vi møtte på problemer med nettsiden vår. Når vi støtte på feil, kunne vi bruke GitHub til å spore endringene vi hadde gjort i koden på en lett måte. Ved å se gjennom historikken kunne vi identifisere når og hvor feilen ble laget. Dette gjorde at vi forstå viktigheten av hyppige push commits med gode meldinger.</p>
+            <p>Selv om vi brukte LiveShare for selve utviklingsprosessen, ga GitHub oss erfaring med å bruke et verktøy som kommer til å bli veldig nyttig for oss i fremtidige samarbeidsprosjekter.</p>
+            <section class="github-images">
+                <img src="../media/github/gitcommithistory.webp" alt="Commit history fra GitHub">
+                <img src="../media/github/commithistory.webp" alt="Commit fra GitHub">
+            </section>
+            <h2>Våre tanker om LiveShare</h2>
+            <p>Vi oppdaget raskt at det finnes en utvidelse som heter LiveShare, og denne har vært et nyttig 
+                verktøy under alle våre gruppemøter. Siden vi har jobbet synkront på skolen flere ganger i uken, har 
+                vi ikke hatt behov for å pushe eller pulle kode mellom oss – noe som har forenklet samarbeidet betraktelig. 
+                Etter litt eksperimentering fant vi også ut at det er mulig å dele en live server gjennom Live Share,
+                slik at alle på teamet kunne se nettsiden på sine egne skjermer. Da ungikk vi å måtte alle sitte på samme side av bordet for å kunne se hvordan siden så ut. 
+            </p><p>Likevel har vi støtt på noen utfordringer ved bruk av Live Share. Et problem er at man 
+                av og til blir ufrivillig «festet» til en annen persons musepeker og dermed bli dratt rundt på siden etter en annen person. 
+                Dette var spesielt irriterende hvis to personer prøvde å kode samtidig, og den ene personen ble "teleportert" til den andre personen mens begge to skriver.
+                En annen utfordring, som virkelig irriterte oss, oppstod når flere 
+                skrev kode samtidig: hvis en person brukte Ctrl + Z for å angre endringer, kunne det 
+                fjerne kode som andre nylig hadde skrevet.
+                </p><p> 
+                Til tross for disse ulempene har Live Share vært et svært nyttig verktøy som har gjort samarbeid enklere 
+                og mer effektivt.</p>
+            <section class="github-images">
+                <img src="../media/github/git-forandring.webp" alt="Commit history fra GitHub" loading="lazy">
+                <img src="../media/github/github-forandring.webp" alt="Commit fra GitHub" loading="lazy">
+            </section>
+            <h2>Positive tanker om GitHub og LiveShare</h2>
+            <h3>GitHub</h3>
+            <ul>
+                <li>Gjør konflikthåndtering ekstremt enkelt</li>
+                <li>Gir alle gruppemedlemmene muligheter til å se hvilke nedringer som ble gjort siden forrige gang de var i dokumentet</li>
+                <li>Muligheter for å finne tidligere kode</li>
+            </ul>
+            <h3>LiveShare</h3>
+            <ul>
+                <li>Når man er i læringsfasen av HTML og CSS, var det enklere å lære sammen ved å kunne samarbeide i "real time"</li>
+                <li>Man kan enkelt forklare eller "følge" andre gruppemedlemmer da man kan velge å pinne seg selv til dem </li>
+                <li>Slipper eventuelle konflikter i koden som kunne oppstått hvis flere pushet kode samtidig</li>
+            </ul>
+        </article>
 
 
-
+    </main>
 </body>
-
 
 
 <footer>
     <!-- venstre side av footer, info til skolen.-->
     <section id="left-side-footer">
-        <img id="logo-footer" src="../media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
+        <img id="logo-footer" src="../media/oslomet/logo/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
         <p>Postboks 4, St. Olavs plass</p>
         <p>0130 Oslo</p>
         <p>Tlf.: 67 23 50 00 </p>
@@ -112,4 +123,5 @@
         </a>
     </section>
 </footer>
+
 </html>

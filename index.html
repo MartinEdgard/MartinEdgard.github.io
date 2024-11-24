@@ -1,19 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!--
-* Ting som må fikses:
-
-- Ikke Section -> Article -> Sections
-- Sjekke overskriftstørrelser
-
-- Endre bilder til webp
-- Kommentere koder
-- Alle filer skal være i lowercase
-
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +10,15 @@
         fra virkeligheten – fra miljøspørsmål til kunstig intelligens. Programmet kombinerer teori med praksis
         og gir deg verdifulle ferdigheter gjennom en bacheloroppgave tilknyttet industrien. Perfekt for deg 
         som vil jobbe med teknologi og vitenskap på en meningsfull måte.">
-    <link rel="icon" href="media/oslomet_logo.svg" type="image/x-icon">
+    <link rel="icon" href="media/oslomet/logo/oslomet_logo.svg" type="image/x-icon">
 </head>
 <header id="index-header">
     <nav id="index-nav">
         <!--navbar med linker til de andre sidene vi har laget.-->
         <div id="logo">
-            <img src="media/oslomet_logo.svg" alt="OsloMet">
+            <a href="index.html">
+                <img src="media/oslomet/logo/oslomet_logo.svg" alt="OsloMet">
+            </a>
         </div>
         <!-- Hamburger menyen av og på. Inspirasjon hentet fra https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -46,7 +34,7 @@
 
 <body id="oslomet-body">
     <!--innledende toppbilde-->
-    <img class="image" src="media/bilde_av_student.webp" alt="Bilde av student"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/
+    <img class="image" src="media/oslomet/bilder/bilde_av_student.webp" alt="Bilde av student"> <!--Bilde hentet fra https://oslomet.fotoware.cloud/fotoweb/
         archives/5002-Utdanning-og-Studentliv/Folder%2052/Arkivvitenskap_SAM_BAW_09.jpg.info#c=%2Ffotoweb%2
         Farchives%2F5002-Utdanning-og-Studentliv%2F Fotograf: Benjamin A. Ward-->
     <main>
@@ -115,10 +103,6 @@
             </section>
         </article>
     </main>
-
-    <article>
-
-    </article>
     <section id="navigation">
         <!--navigasjonsknapper som sender en til forskjellige plasser på siden-->
         <h2>Hva vil du vite?</h2>
@@ -146,11 +130,11 @@
             <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
             <p><a href="https://ansatt.oslomet.no/oslomet-karriere"> Les mer på OsloMet Karriere</a> </p>
         </section>
-        <img src="media/job_photo.webp" alt="Bilde av person foran tavle" loading="lazy">
+        <img src="media//oslomet/bilder/job_photo.webp" alt="Bilde av person foran tavle" loading="lazy">
         <!--Bilde hentet fra https://www.pexels.com/nb-no/bilde/1181345/. Fotograf: Christina Morillo -->
     </article>
     <article id="learn" class="half-text-half-image">
-        <img src="media/learn_photo.webp" alt="Bilde av kode" loading="lazy">
+        <img src="media/oslomet/bilder/learn_photo.webp" alt="Bilde av kode" loading="lazy">
 
         <!--Bilde hentet fra https://www.pexels.com/nb-no/sok/science/. Fotograf: Markus Spiske -->
         <section class="text-box">
@@ -205,21 +189,36 @@
                 uke på studierelatert arbeid gjennom hele semesteret. </p>
         </section>
         <section id="tuition">
+
             <!--viser til linker der du betaler semesteravgift, link til utenlandske studenter og link til videre studiemuligheter-->
             <h3>Hva koster det?</h3>
-            <p><a href="https://student.oslomet.no/en/web/student/semester-fee">Du betaler en semesteravgift
-                    hvert semester(student.oslomet.no)</a></p>
-            <p><a
+            <p>
+
+                <a href="https://student.oslomet.no/en/web/student/semester-fee">Du betaler en semesteravgift hvert
+                    semester (student.oslomet.no)</a>
+
+            </p>
+
+            <p>
+
+                <a
                     href="https://student.oslomet.no/en/web/student/tuition-fees-for-international-students-from-outside-eu-eea">
                     Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift
-                    (student.oslomet.no)</a>.
-                Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
+                    (student.oslomet.no)</a>. Det er mulig å søke om unntak for betaling av denne studieavgiften.
+
+            </p>
+
             <h3>Videre studiemuligheter</h3>
+
             <a id="master-link" href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
-                <p>Anvendt data- og informasjonsteknologi</p>
-                <p>Masterprogram | 2 år | Pilestredet | Heltid</p>
+                Anvendt data- og informasjonsteknologi<br>
+                Masterprogram | 2 år | Pilestredet | Heltid
+
             </a>
+
         </section>
+
+
     </article>
     <div id="background-academic-path">
         <article id="academic-path">
@@ -227,7 +226,7 @@
             <h2>Studiets oppbygging</h2>
             <h3>1. studieår</h3>
             <h4> 1. semester </h4>
-            <p><img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+            <p><img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                 Valgemne</p>
             <section class="semester">
                 <div>
@@ -431,7 +430,7 @@
                                         modellering og beregninger</a></p>
                                 <p>MAMO2200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -449,7 +448,7 @@
                                 </p>
                                 <p>ADSE3200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td></td>
                         </tr>
@@ -519,7 +518,7 @@
                                         til IT-forskning</a></p>
                                 <p>DATA3730</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -527,7 +526,7 @@
                                         til IT-forskning</a></p>
                                 <p>DATA3730</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -535,7 +534,7 @@
                                         til IT-forskning</a></p>
                                 <p>DATA3730</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -545,7 +544,7 @@
                                         to Data Science with Scripting</a></p>
                                 <p>DATA3800</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -553,7 +552,7 @@
                                         kunstig intelligens og data science prosjekt</a></p>
                                 <p>DATA3750</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -561,7 +560,7 @@
                                 </p>
                                 <p>ITPE3100</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -571,7 +570,7 @@
                                 </p>
                                 <p>ITPE3100</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -579,7 +578,7 @@
                                 </p>
                                 <p>ITPE3100</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -587,7 +586,7 @@
                                         algebra og introduksjon til gruppeteori</a></p>
                                 <p>MAMO2300</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -597,7 +596,7 @@
                                         og visualisering</a></p>
                                 <p>MAMO3200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -605,7 +604,7 @@
                                         og visualisering</a></p>
                                 <p>MAMO3200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -613,7 +612,7 @@
                                         analyse</a></p>
                                 <p>MAMO3300</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                     </tbody>
@@ -658,7 +657,7 @@
                                         av programvare</a></p>
                                 <p>ADTS2310</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -666,7 +665,7 @@
                                         av programvare</a></p>
                                 <p>ADTS2310</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -674,7 +673,7 @@
                                         av programvare</a></p>
                                 <p>ADTS2310</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -684,7 +683,7 @@
                                         og skytjenester</a></p>
                                 <p>DATA2410</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -692,7 +691,7 @@
                                         og skytjenester</a></p>
                                 <p>DATA2410</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -700,7 +699,7 @@
                                         og skytjenester</a></p>
                                 <p>DATA2410</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -710,7 +709,7 @@
                                         programmer</a></p>
                                 <p>DAVE3606</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -718,7 +717,7 @@
                                         programmer</a></p>
                                 <p>DAVE3606</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td>
                                 <p><a
@@ -726,7 +725,7 @@
                                 </p>
                                 <p>ADSE3200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                         <tr>
@@ -736,7 +735,7 @@
                                         modellering og beregninger</a></p>
                                 <p>MAMO2200</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                             <td></td>
                             <td>
@@ -745,7 +744,7 @@
                                         og algebraiske strukturer</a></p>
                                 <p>MAMO2500</p>
                                 <p>10 stp.</p>
-                                <img src="media/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
+                                <img src="media/oslomet/logo/valgfrittemne_icon.svg" alt="Valgfag" loading="lazy">
                             </td>
                         </tr>
                     </tbody>
@@ -765,7 +764,7 @@
             <a href="https://www.oslomet.no/om/ansatt/krhel3944/">
                 <div>
                     <div>
-                        <img src="media/krhel3944.webp" alt="Kristoffer Herland Helton" loading="lazy">
+                        <img src="media/oslomet/bilder/krhel3944.webp" alt="Kristoffer Herland Helton" loading="lazy">
                     </div>
                     <div id="leader-info">
                         <h4>Kristoffer Herland Helton</h4>
@@ -830,7 +829,7 @@
             <p><a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og design</a></p>
         </section>
 
-        <img src="media/studenhistorier.webp" alt="Bilde av person foran tavle" loading="lazy">
+        <img src="media/oslomet/bilder/studenhistorier.webp" alt="Bilde av person foran tavle" loading="lazy">
         <!--Bilde hentet fra https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap. Fotograf: Oda Hveem / OsloMet -->
 
     </article>
@@ -847,17 +846,10 @@
         <p>Til toppen</p>
     </a>
 </body>
-
-
-
-
-
-
-
 <footer>
     <!-- venstre side av footer, info til skolen.-->
     <section id="left-side-footer">
-        <img id="logo-footer" src="media/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
+        <img id="logo-footer" src="media/oslomet/logo/oslomet_textlogo_hvit.svg" alt="Oslo Metropolitan University">
         <p>Postboks 4, St. Olavs plass</p>
         <p>0130 Oslo</p>
         <p>Tlf.: 67 23 50 00 </p>
