@@ -1298,9 +1298,7 @@ footer a:hover {
 
 /* 11. Scaling for widescreen*/
 @media (min-width: 2000px) {
-  html {
-    font-size: 3rem;
-  }
+ 
 
   #grid-container-general-info {
     min-width: 80%
